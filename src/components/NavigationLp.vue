@@ -77,7 +77,6 @@ header {
 }
 
 /*responsive breakpoints*/
-
 /*tablet*/
 @media (max-width: 750px) {
   header {
