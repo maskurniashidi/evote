@@ -1,4 +1,4 @@
-# fireblogs
+# evote
 
 ## Project setup
 ```
