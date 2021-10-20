@@ -8,12 +8,12 @@
           <h3 class="header">e<span class="vote-span">Vote</span> Himit</h3>
         </div>
         <p class="left-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-        <p class="left-copyright">&copy;copyright 2021 All rights reserved</p>
+        <p class="copyright">&copy;copyright 2021 All rights reserved</p>
       </div>
 
       <!-- MID FOOTER -->
       <div class="mid-footer">
-        <h3>Website</h3>
+        <h3 class="mid-title">Website</h3>
         <ul>
           <li>
             <router-link class="link" to="#">Pengembang aplikasi</router-link>
@@ -33,21 +33,21 @@
         <div class="social-media-list">
           <ul>
             <li>
-              <img class="sosmed-icon" src="https://source.unsplash.com/random/25x25" alt="" />
+              <i class="fab fa-twitter"></i>
               <router-link class="link" to="#">Himit PENS</router-link>
             </li>
             <li>
-              <img class="sosmed-icon" src="https://source.unsplash.com/random/25x25" alt="" />
+              <i class="fab fa-instagram"></i>
               <router-link class="link" to="#">Himit PENS</router-link>
             </li>
           </ul>
           <ul>
             <li>
-              <img class="sosmed-icon" src="https://source.unsplash.com/random/25x25" alt="" />
+              <i class="fab fa-youtube"></i>
               <router-link class="link" to="#">Himit PENS</router-link>
             </li>
             <li>
-              <img class="sosmed-icon" src="https://source.unsplash.com/random/25x25" alt="" />
+              <i class="fab fa-facebook"></i>
               <router-link class="link" to="#">Himit PENS</router-link>
             </li>
           </ul>
@@ -84,6 +84,8 @@ li {
 .link {
   color: $light-color;
   font-size: 18px;
+  transform: to-lower-case($string: "");
+  text-transform: capitalize;
   &:hover {
     color: $secondary-color;
     font-weight: 500;
@@ -136,7 +138,7 @@ footer {
       .left-description {
         font-size: 18px;
       }
-      .copyright-description {
+      .copyright {
         font-size: 16px;
       }
     }
@@ -144,11 +146,12 @@ footer {
     .mid-footer {
       height: 223px;
       flex: 1;
-      height: 223px;
       display: flex;
       flex-direction: column;
       margin-left: 30px;
-      margin-top: 30px;
+      h3 {
+        margin-top: 20px;
+      }
     }
 
     .right-footer {
@@ -156,20 +159,77 @@ footer {
       flex: 1;
       height: 223px;
       flex-direction: column;
-      margin-top: 30px;
       .social-media-list {
         display: flex;
-
         ul {
           flex: 1;
           li {
             display: flex;
             align-items: center;
-            img {
-              border-radius: 50%;
-            }
             .link {
               margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//RESPONSIVE BREAKPOINT
+//TABLET/MOBILE
+@media (max-width: 750px) {
+  .link {
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  footer {
+    .container {
+      width: 90%;
+      flex-direction: column;
+      align-items: flex-start;
+      height: 484px;
+      .left-footer {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 20px;
+        .branding {
+          .logo-himit {
+          }
+          .header {
+            font-weight: 700;
+            font-size: 18px;
+            span {
+            }
+          }
+        }
+        .left-description {
+          margin-top: 15px;
+          font-size: 14px;
+        }
+        .copyright {
+          font-size: 14px;
+          margin-top: 15px;
+        }
+      }
+
+      .mid-footer {
+        width: 100%;
+        margin-left: 0px;
+      }
+
+      .right-footer {
+        width: 100%;
+        .social-media-list {
+          ul {
+            li {
+              .link {
+                font-size: 14px;
+              }
             }
           }
         }
