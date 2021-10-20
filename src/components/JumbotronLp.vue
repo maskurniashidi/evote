@@ -94,6 +94,11 @@ header {
         i {
           margin-left: 5px;
         }
+        &:hover {
+          background: $secondary-color;
+          box-shadow: -2px 4px 10px rgba($secondary-color, 0.4);
+          font-weight: bold;
+        }
       }
     }
     .right {

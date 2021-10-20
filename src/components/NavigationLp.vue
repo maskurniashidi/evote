@@ -95,8 +95,6 @@ header {
         }
         .header {
           font-size: 32px;
-          span {
-          }
         }
       }
 
@@ -123,8 +121,6 @@ header {
         }
         .header {
           font-size: 24px;
-          span {
-          }
         }
       }
 

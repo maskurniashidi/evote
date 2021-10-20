@@ -151,8 +151,6 @@ footer {
       display: flex;
       flex-direction: column;
       margin-left: 30px;
-      h3 {
-      }
     }
 
     .right-footer {
