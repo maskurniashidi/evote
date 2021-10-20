@@ -99,7 +99,9 @@ h3 {
 
 //STYLING
 footer {
-  margin-top: 100px;
+  margin-top: 400px;
+  margin-bottom: 0;
+  height: 484px;
   width: 100%;
   background: linear-gradient(183.41deg, $third-color -8.57%, $base-color 82.96%);
   font-family: $base-font;
@@ -116,7 +118,6 @@ footer {
       flex: 1;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       .branding {
         display: flex;
         .logo-himit {
@@ -137,6 +138,7 @@ footer {
       }
       .left-description {
         font-size: 18px;
+        margin: 15px 0px;
       }
       .copyright {
         font-size: 16px;
@@ -171,6 +173,15 @@ footer {
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 975px) {
+  .social-media-list {
+    flex-direction: column;
+    ul {
+      margin-bottom: -20px;
     }
   }
 }
@@ -227,7 +238,9 @@ footer {
       .right-footer {
         width: 100%;
         .social-media-list {
+          flex-direction: row;
           ul {
+            margin-bottom: 0px;
             li {
               .link {
                 font-size: 14px;

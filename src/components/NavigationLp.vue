@@ -71,6 +71,11 @@ header {
         font-size: 18px;
         color: $light-color;
         text-decoration: none;
+        &:hover {
+          background-color: $light-color;
+          color: $base-color;
+          font-weight: bold;
+        }
       }
     }
   }
