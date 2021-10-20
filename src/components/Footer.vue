@@ -150,7 +150,6 @@ footer {
       flex-direction: column;
       margin-left: 30px;
       h3 {
-        margin-top: 20px;
       }
     }
 
@@ -220,6 +219,9 @@ footer {
       .mid-footer {
         width: 100%;
         margin-left: 0px;
+        h3 {
+          margin-top: 20px;
+        }
       }
 
       .right-footer {
