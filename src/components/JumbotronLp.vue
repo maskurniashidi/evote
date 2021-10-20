@@ -115,7 +115,6 @@ header {
 @media (max-width: 1250px) {
   .jumbotron {
     flex-direction: column;
-    margin-top: 50px;
     .left {
       order: 2;
       width: 100%;
@@ -123,6 +122,9 @@ header {
     .right {
       order: 1;
       width: 100%;
+      img {
+        margin-top: 40px;
+      }
     }
   }
 }
@@ -135,9 +137,11 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     height: 375px;
-    margin-top: 50px;
     .jumbotron {
       flex-direction: column;
+      .left {
+        margin-top: 20px;
+      }
       .right {
         display: none;
       }
@@ -149,8 +153,8 @@ header {
   header {
     background-image: url("../assets/img/header-bg-mobile2.png");
     .jumbotron {
-      margin-top: 50px;
       .left {
+        margin-top: 20px;
         h2 {
           font-size: 28px;
           line-height: 36px;
