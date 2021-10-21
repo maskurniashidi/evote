@@ -33,4 +33,50 @@ export default {
     margin-top: 50px;
   }
 }
+
+@media (max-width: 1250px) {
+  .landing-page {
+    nav {
+    }
+    .jumbotron {
+    }
+    .main-section {
+    }
+  }
+}
+
+@media (max-width: 1028px) {
+  .landing-page {
+    nav {
+    }
+    .jumbotron {
+    }
+    .main-section {
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .landing-page {
+    nav {
+    }
+    .jumbotron {
+    }
+    .main-section {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .landing-page {
+    nav {
+    }
+    .jumbotron {
+    }
+    .main-section {
+      margin-top: 10px;
+    }
+  }
+}
 </style>

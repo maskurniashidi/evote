@@ -95,6 +95,7 @@ header {
       flex: 1;
       img {
         border-radius: 24px;
+        max-width: 100%;
       }
     }
   }
@@ -103,17 +104,47 @@ header {
 //RESPONSIVE BREAKPOINT
 //TABLET
 @media (max-width: 1250px) {
-  .jumbotron {
-    flex-direction: column;
-    .left {
-      order: 2;
-      width: 100%;
+  header {
+    .jumbotron {
+      width: 90%;
+      // flex-direction: column;
+      // background-color: red;
+      .left {
+        // background-color: salmon;
+        // order: 2;
+        // width: 100%;
+      }
+      .right {
+        // background-color: lightblue;
+        display: flex;
+        align-items: center;
+        // order: 1;
+        // width: 100%;
+        img {
+          // margin-top: 40px;
+        }
+      }
     }
-    .right {
-      order: 1;
-      width: 100%;
-      img {
-        margin-top: 40px;
+  }
+}
+
+//TABLET
+@media (max-width: 1028px) {
+  header {
+    .jumbotron {
+      flex-direction: column;
+      .left {
+        background-color: salmon;
+        order: 2;
+      }
+      .right {
+        background-color: lightblue;
+        // display: flex;
+        // align-items: center;
+        order: 1;
+        img {
+          margin-top: 40px;
+        }
       }
     }
   }
@@ -139,10 +170,12 @@ header {
   }
 }
 
+//MOBILE
 @media (max-width: 550px) {
   header {
     background-image: url("../assets/img/header-bg-mobile2.png");
     .jumbotron {
+      width: 95%;
       .left {
         margin-top: 20px;
         h2 {
@@ -150,7 +183,7 @@ header {
           line-height: 36px;
         }
         p {
-          font-size: 18px;
+          font-size: 16px;
           line-height: 25px;
         }
       }
