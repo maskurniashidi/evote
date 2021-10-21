@@ -29,16 +29,6 @@ export default {
 
 //VARIABLE
 $base-font: "Poppins", sans-serif;
-$base-color: #2f80ec;
-$light-color: #ffffff;
-$secondary-color: #0d397a;
-$third-color: #6888c8;
-
-//IMPORT
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
-
-//VARIABLE
-$base-font: "Poppins", sans-serif;
 $primary-500: #2f80ec;
 $secondary-700: #485671;
 $netral-500: #1e272e;
@@ -67,7 +57,7 @@ header {
       margin-right: 10px;
       h2 {
         font-size: 42px;
-        color: $netral-500;
+        color: #092371;
         font-weight: 500;
       }
       p {
@@ -89,14 +79,14 @@ header {
         align-items: center;
         justify-content: center;
         text-decoration: none;
-        color: $light-color;
+        color: $light-white;
         font-size: 16px;
         i {
           margin-left: 5px;
         }
         &:hover {
-          background: $secondary-color;
-          box-shadow: -2px 4px 10px rgba($secondary-color, 0.4);
+          background: $secondary-700;
+          box-shadow: -2px 4px 10px rgba($secondary-700, 0.4);
           font-weight: bold;
         }
       }
