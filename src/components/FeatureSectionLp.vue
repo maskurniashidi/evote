@@ -81,5 +81,21 @@ export default {
 @media (max-width: 750px) {
 }
 @media (max-width: 550px) {
+  .feature-section {
+    .card-content {
+      .card-title {
+        .header {
+          font-size: 28px;
+          span {
+          }
+        }
+        .line {
+        }
+      }
+
+      .card-group {
+      }
+    }
+  }
 }
 </style>

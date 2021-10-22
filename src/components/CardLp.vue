@@ -35,11 +35,13 @@ export default {
     margin-top: 20px;
     margin-bottom: 10px;
     font-family: $base-font;
+    font-weight: 500;
   }
   .card-text {
     text-align: center;
     padding: 0px 30px;
     font-family: $base-font;
+    color: #858585;
   }
 }
 
@@ -59,5 +61,12 @@ export default {
 @media (max-width: 750px) {
 }
 @media (max-width: 550px) {
+  .card {
+    .card-title {
+    }
+    .card-text {
+      font-size: 14px;
+    }
+  }
 }
 </style>

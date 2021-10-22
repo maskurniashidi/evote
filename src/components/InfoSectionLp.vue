@@ -47,7 +47,7 @@ main {
     width: 80%;
     margin: 0px auto;
     font-family: $base-font;
-    font-size: 18px;
+    font-size: 16px;
     // background-color: aqua;
     .header {
       text-align: center;
@@ -137,7 +137,6 @@ main {
           }
 
           .p-bottom {
-            display: none;
           }
           .sosmed-link {
             a {
@@ -228,7 +227,6 @@ main {
       width: 95%;
       .header {
         font-size: 28px;
-        font-weight: 500;
       }
       .line {
       }
@@ -243,7 +241,7 @@ main {
             font-weight: 500;
           }
           p {
-            font-size: 16px;
+            font-size: 14px;
           }
 
           .p-bottom {
