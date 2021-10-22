@@ -82,6 +82,7 @@ export default {
 }
 @media (max-width: 550px) {
   .feature-section {
+    width: 95%;
     .card-content {
       .card-title {
         .header {

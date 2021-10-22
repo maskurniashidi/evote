@@ -4,6 +4,7 @@
     <JumbotronLp class="jumbotron" />
     <InfoSectionLp class="main-section" />
     <FeatureSectionLp class="feature-section" />
+    <ContactSectionLp class="contact-section" />
     <Footer class="footer" />
   </div>
 </template>
@@ -14,9 +15,10 @@ import Footer from "../components/Footer.vue";
 import JumbotronLp from "../components/JumbotronLp.vue";
 import InfoSectionLp from "../components/InfoSectionLp.vue";
 import FeatureSectionLp from "../components/FeatureSectionLp.vue";
+import ContactSectionLp from "../components/ContactSectionLp.vue";
 export default {
   name: "LandingPage",
-  components: { NavigationLp, Footer, JumbotronLp, InfoSectionLp, FeatureSectionLp },
+  components: { NavigationLp, Footer, JumbotronLp, InfoSectionLp, FeatureSectionLp, ContactSectionLp },
 };
 </script>
 
@@ -35,6 +37,14 @@ export default {
     margin-top: 50px;
   }
   .feature-section {
+    margin-top: 100px;
+  }
+
+  .contact-section {
+    margin-top: 100px;
+  }
+
+  .footer {
     margin-top: 100px;
   }
 }

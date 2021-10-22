@@ -34,21 +34,21 @@
           <ul>
             <li>
               <i class="fab fa-twitter"></i>
-              <router-link class="link" to="#">Himit PENS</router-link>
+              <a class="link" target="_blank" href="https://twitter.com/himitpens">Himit PENS</a>
             </li>
             <li>
               <i class="fab fa-instagram"></i>
-              <router-link class="link" to="#">Himit PENS</router-link>
+              <a class="link" target="_blank" href="https://www.instagram.com/himitpens/">Himit PENS</a>
             </li>
           </ul>
           <ul>
             <li>
               <i class="fab fa-youtube"></i>
-              <router-link class="link" to="#">Himit PENS</router-link>
+              <a class="link" target="_blank" href="https://www.youtube.com/c/HIMITPENS">Himit PENS</a>
             </li>
             <li>
               <i class="fab fa-facebook"></i>
-              <router-link class="link" to="#">Himit PENS</router-link>
+              <a class="link" target="_blank" href="https://www.facebook.com/himitpens">Himit PENS</a>
             </li>
           </ul>
         </div>
@@ -99,7 +99,6 @@ h3 {
 
 //STYLING
 footer {
-  margin-top: 400px;
   margin-bottom: 0;
   height: 484px;
   width: 100%;

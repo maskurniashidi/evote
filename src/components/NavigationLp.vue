@@ -2,7 +2,9 @@
   <header>
     <nav class="container">
       <div class="branding">
-        <img class="himit-logo" src="https://himitpens.com/img/HIMIT.png" alt="" />
+        <router-link to="/">
+          <img class="himit-logo" src="https://himitpens.com/img/HIMIT.png" alt="" />
+        </router-link>
         <div class="header">e<span class="vote-span">Vote</span> Himit</div>
       </div>
       <div class="nav-links">
@@ -49,6 +51,7 @@ header {
       .himit-logo {
         width: 60px;
         height: auto;
+        cursor: pointer;
       }
       .header {
         font-size: 36px;
@@ -56,6 +59,7 @@ header {
         font-weight: normal;
         color: $light-color;
         margin-left: 10px;
+        cursor: pointer;
 
         span {
           color: $secondary-color;
@@ -75,6 +79,7 @@ header {
           background-color: $light-color;
           color: $base-color;
           font-weight: bold;
+          transition: 0.5s;
         }
       }
     }

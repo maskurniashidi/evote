@@ -30,6 +30,11 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  &:hover {
+    transform: scale(0.95, 0.95);
+    transition: 0.4s;
+  }
 
   .card-title {
     margin-top: 20px;
@@ -38,6 +43,7 @@ export default {
     font-weight: 500;
   }
   .card-text {
+    font-size: 16px;
     text-align: center;
     padding: 0px 30px;
     font-family: $base-font;
