@@ -2,7 +2,7 @@
   <section class="feature-section">
     <div class="card-content">
       <div class="card-title">
-        <h2 class="header"><span>Pengembang</span> Aplikasi</h2>
+        <h2 class="header"><span>Fitur</span> Aplikasi</h2>
         <hr class="line" />
       </div>
       <div class="card-group">
@@ -60,9 +60,26 @@ export default {
       //   background-color: salmon;
       display: grid;
       row-gap: 2rem;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
       justify-items: center;
     }
   }
+}
+
+@media (max-width: 1250px) {
+  .feature-section {
+    .card-content {
+      width: 90%;
+    }
+  }
+}
+@media (max-width: 1028px) {
+  .card-group {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+@media (max-width: 750px) {
+}
+@media (max-width: 550px) {
 }
 </style>
