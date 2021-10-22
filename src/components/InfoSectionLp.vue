@@ -18,10 +18,10 @@
             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           </p>
           <div class="sosmed-link">
-            <a class="sosmed-link-1" href="#">Instagram</a>
-            <a class="sosmed-link-2" href="#">Facebook</a>
-            <a class="sosmed-link-3" href="#">Youtube</a>
-            <a class="sosmed-link-4" href="#">Twitter</a>
+            <a class="sosmed-link-1" target="_blank" href="https://www.instagram.com/himitpens/">Instagram</a>
+            <a class="sosmed-link-2" target="_blank" href="https://www.facebook.com/himitpens">Facebook</a>
+            <a class="sosmed-link-3" target="_blank" href="https://www.youtube.com/c/HIMITPENS">Youtube</a>
+            <a class="sosmed-link-4" target="_blank" href="https://twitter.com/himitpens">Twitter</a>
           </div>
         </div>
       </div>
@@ -109,6 +109,11 @@ main {
             text-decoration: none;
             color: $primary-500;
             margin-right: 20px;
+            &:hover {
+              background: $primary-500;
+              color: whitesmoke;
+              box-shadow: 0 5px 12px 0 rgba($color: $primary-500, $alpha: 0.5);
+            }
           }
         }
       }

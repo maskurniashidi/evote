@@ -119,6 +119,8 @@ input:focus {
     resize: none;
     padding-top: 5px;
     padding-left: 10px;
+    border: 0.5px solid #d5edfe;
+    border-radius: 8px;
   }
 }
 
@@ -185,16 +187,25 @@ section {
             .form-email {
               flex: 1;
             }
-
-            .btn-group {
-              .btn-send {
-                width: 191px;
-                height: 35px;
-
-                /* primary/500 */
-
-                background: $primary-500;
-                border-radius: 9px;
+          }
+          .btn-group {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .btn-send {
+              padding: 7px 45px;
+              text-align: center;
+              border: none;
+              display: inline-block;
+              font-size: 16px;
+              cursor: pointer;
+              background: $primary-500;
+              border-radius: 9px;
+              color: #fff;
+              &:hover {
+                transform: scale(0.95, 0.95);
+                transition: 0.4s;
+                box-shadow: 0 5px 12px 0 rgba($color: $primary-500, $alpha: 0.5);
               }
             }
           }

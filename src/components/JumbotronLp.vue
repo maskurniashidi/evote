@@ -81,13 +81,9 @@ header {
         text-decoration: none;
         color: $light-white;
         font-size: 16px;
+        cursor: pointer;
         i {
           margin-left: 5px;
-        }
-        &:hover {
-          background: $secondary-700;
-          box-shadow: -2px 4px 10px rgba($secondary-700, 0.4);
-          font-weight: bold;
         }
       }
     }
