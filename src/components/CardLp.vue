@@ -30,13 +30,16 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   .card-title {
     margin-top: 20px;
     margin-bottom: 10px;
+    font-family: $base-font;
   }
   .card-text {
     text-align: center;
     padding: 0px 30px;
+    font-family: $base-font;
   }
 }
 </style>
