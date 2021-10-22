@@ -132,7 +132,6 @@ header {
     .jumbotron {
       flex-direction: column;
       .left {
-        background-color: salmon;
         order: 2;
       }
       .right {

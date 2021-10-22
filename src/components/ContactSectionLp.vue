@@ -28,11 +28,11 @@
         <div class="right">
           <form class="contact-form">
             <div class="data-form">
-              <div class="form-group name">
+              <div class="form-group form-name">
                 <label for="name">Nama</label>
                 <input type="text" class="form-control" placeholder="masukkan nama anda" />
               </div>
-              <div class="form-group email">
+              <div class="form-group form-email">
                 <label for="email">Email</label>
                 <input type="email" class="form-control" placeholder="masukkan email anda" />
               </div>
@@ -71,7 +71,7 @@ export default {
 
 //GLOBAL
 .card {
-  width: 275px;
+  width: 225px;
   height: 170px;
   left: 0px;
   top: 0px;
@@ -83,17 +83,52 @@ export default {
   justify-content: center;
   padding: 0px 20px;
   cursor: pointer;
+
   &:hover {
     transform: scale(0.95, 0.95);
     transition: 0.4s;
   }
 }
 
+textarea:focus,
+input:focus {
+  outline: none;
+  border: darkturquoise;
+  box-shadow: 0 0 4px 0 $primary-500;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  label {
+    margin-bottom: 5px;
+  }
+  input {
+    width: 100%;
+    height: 30px;
+    border: 0.5px solid #d5edfe;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-left: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 120px;
+    resize: none;
+    padding-top: 5px;
+    padding-left: 10px;
+  }
+}
+
+//STYLING
 section {
   .contact-section {
     width: 80%;
     margin: 0px auto;
     font-family: $base-font;
+    font-size: 14px;
 
     .header {
       text-align: center;
@@ -114,29 +149,108 @@ section {
     }
 
     .main-form {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
       margin-top: 20px;
+      gap: 20px;
       .left {
-        flex: 1;
         display: flex;
         flex-direction: column;
         .top-card {
-          display: flex;
-          justify-content: space-between;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          row-gap: 20px;
         }
         .bottom-card {
           margin-top: 30px;
         }
       }
       .right {
-        flex: 1;
         .contact-form {
-          width: 600px;
+          width: 500px;
           height: 390px;
-          margin-left: 20px;
           background: #ffffff;
           box-shadow: -2px 4px 10px rgba(47, 128, 236, 0.4);
           border-radius: 20px;
+          display: flex;
+          flex-direction: column;
+          padding: 20px 20px;
+          .data-form {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            .form-name {
+              flex: 1;
+            }
+            .form-email {
+              flex: 1;
+            }
+
+            .btn-group {
+              .btn-send {
+                width: 191px;
+                height: 35px;
+
+                /* primary/500 */
+
+                background: $primary-500;
+                border-radius: 9px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//RESPOSIVE BREAKPOINT
+@media (max-width: 1250px) {
+}
+@media (max-width: 1028px) {
+  section {
+    .contact-section {
+      width: 90;
+    }
+  }
+}
+@media (max-width: 750px) {
+}
+@media (max-width: 550px) {
+  section {
+    width: 95%;
+
+    .contact-section {
+      .header {
+        span {
+        }
+      }
+      .line {
+      }
+
+      .main-form {
+        .left {
+          place-self: center;
+          .top-card {
+          }
+          .bottom-card {
+          }
+        }
+        .right {
+          place-self: center;
+          .contact-form {
+            width: 350px;
+            height: 450px;
+            .data-form {
+              display: flex;
+              flex-direction: column;
+              gap: 0;
+              .form-name {
+              }
+              .form-email {
+              }
+            }
+          }
         }
       }
     }

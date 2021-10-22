@@ -43,6 +43,7 @@ export default {
     font-weight: 500;
   }
   .card-text {
+    font-size: 16px;
     text-align: center;
     padding: 0px 30px;
     font-family: $base-font;
