@@ -3,6 +3,7 @@
     <NavigationLp class="nav" />
     <JumbotronLp class="jumbotron" />
     <InfoSectionLp class="main-section" />
+    <CardLp class=".card" />
     <Footer class="footer" />
   </div>
 </template>
@@ -12,9 +13,10 @@ import NavigationLp from "../components/NavigationLp.vue";
 import Footer from "../components/Footer.vue";
 import JumbotronLp from "../components/JumbotronLp.vue";
 import InfoSectionLp from "../components/InfoSectionLp.vue";
+import CardLp from "../components/CardLp.vue";
 export default {
   name: "LandingPage",
-  components: { NavigationLp, Footer, JumbotronLp, InfoSectionLp },
+  components: { NavigationLp, Footer, JumbotronLp, InfoSectionLp, CardLp },
 };
 </script>
 
@@ -31,6 +33,9 @@ export default {
   }
   .main-section {
     margin-top: 50px;
+  }
+  .card {
+    margin: 100px;
   }
 }
 

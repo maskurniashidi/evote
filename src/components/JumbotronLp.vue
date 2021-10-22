@@ -127,8 +127,6 @@ header {
     }
   }
 }
-
-//TABLET
 @media (max-width: 1028px) {
   header {
     .jumbotron {
@@ -169,8 +167,6 @@ header {
     }
   }
 }
-
-//MOBILE
 @media (max-width: 550px) {
   header {
     background-image: url("../assets/img/header-bg-mobile2.png");
