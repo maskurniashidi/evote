@@ -30,6 +30,11 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  &:hover {
+    transform: scale(0.95, 0.95);
+    transition: 0.4s;
+  }
 
   .card-title {
     margin-top: 20px;

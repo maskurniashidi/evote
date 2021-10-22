@@ -99,7 +99,6 @@ h3 {
 
 //STYLING
 footer {
-  margin-top: 400px;
   margin-bottom: 0;
   height: 484px;
   width: 100%;
