@@ -8,7 +8,7 @@
     <div class="right">
       <div class="nav-login">
         <router-link class="btn-nav btn-masuk" to="/LoginPage">Masuk</router-link>
-        <router-link class="btn-nav btn-daftar" to="/LoginPage">Daftar</router-link>
+        <router-link class="btn-nav btn-daftar" to="/RegisterPage">Daftar</router-link>
       </div>
       <div class="branding">
         <router-link to="/">
