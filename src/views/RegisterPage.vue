@@ -18,26 +18,49 @@
       </div>
       <div class="login-form">
         <h2 class="form-title">Selamat datang !</h2>
-        <p class="form-text">Masuk ke akun anda</p>
+        <p class="form-text">Buat akun anda sekarang</p>
         <form class="main-form">
-          <div class="form-group form-email">
-            <label for="email">Email</label>
+          <div class="form-group form-name">
+            <label for="name">Nama pengguna</label>
             <div class="input-field">
               <i class="far fa-envelope"></i>
-              <input type="email" class="form-control" placeholder="masukkan email anda" />
+              <input type="text" class="form-control" placeholder="Masukkan nama anda" />
             </div>
           </div>
-          <div class="form-group form-password">
-            <label for="email">Password</label>
+          <div class="form-group form-email">
+            <label for="email">Email Pengguna</label>
             <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="password" class="form-control" placeholder="masukkan password anda" />
-              <i class="far fa-eye"></i>
+              <i class="far fa-envelope"></i>
+              <input type="email" class="form-control" placeholder="Masukkan email anda" />
             </div>
-            <router-link class="forget-password" to="/ErrorPage">Lupa kata sandi ?</router-link>
+          </div>
+          <div class="form-group form-nrp">
+            <label for="nrp">NRP pengguna</label>
+            <div class="input-field">
+              <i class="fas fa-th-large"></i>
+              <input type="text" class="form-control" placeholder="Masukkan NRP anda" />
+            </div>
+          </div>
+          <div class="form-password">
+            <div class="form-group form-first-password">
+              <label for="email">Kata sandi</label>
+              <div class="input-field">
+                <i class="fas fa-lock"></i>
+                <input type="password" class="form-control" placeholder="Buat kata sandi" />
+                <i class="far fa-eye"></i>
+              </div>
+            </div>
+            <div class="form-group form-confirm-password">
+              <label for="email">Ulangi kata sandi</label>
+              <div class="input-field">
+                <i class="fas fa-lock"></i>
+                <input type="password" class="form-control" placeholder="Ulangi kata sandi" />
+                <i class="far fa-eye"></i>
+              </div>
+            </div>
           </div>
           <router-link to="/ErrorPage">
-            <button class="btn-submit">Masuk</button>
+            <button class="btn-submit">Daftar</button>
           </router-link>
         </form>
       </div>
@@ -47,7 +70,7 @@
 
 <script>
 export default {
-  name: "LoginPage",
+  name: "RegisterPage",
   components: {},
 };
 </script>
@@ -55,7 +78,6 @@ export default {
 <style lang="scss" scoped>
 //IMPORT
 @import "../components/modules/variables";
-
 //GLOBAL
 input:focus {
   outline: none;
@@ -70,7 +92,7 @@ input:focus {
 .form-group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   label {
     margin-bottom: 5px;
   }
@@ -141,6 +163,7 @@ input:focus {
     .nav-login {
       align-self: flex-end;
       margin: 50px;
+      margin: 50px 50px 30px 0px;
       .btn-nav {
         text-decoration: none;
         color: #fff;
@@ -149,7 +172,7 @@ input:focus {
         background: $primary-700;
         margin-left: 10px;
       }
-      .btn-daftar {
+      .btn-masuk {
         background-color: transparent;
         border: 1.5px solid #fff;
         padding: 3.5px 18.5px;
@@ -186,7 +209,7 @@ input:focus {
     }
 
     .login-form {
-      width: 60%;
+      width: 80%;
       margin: 0px auto;
       .form-title {
       }
@@ -195,14 +218,15 @@ input:focus {
       }
       .main-form {
         .form-password {
-          .forget-password {
-            align-self: flex-end;
-            margin-top: 10px;
-            text-decoration: none;
-            color: #fff;
-            &:hover {
-              color: $primary-700;
-            }
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          column-gap: 10px;
+          // background-color: salmon;
+          .form-first-password {
+            // background-color: aqua;
+          }
+          .form-confirm-password {
+            // background-color: greenyellow;
           }
         }
         .btn-submit {
@@ -217,6 +241,7 @@ input:focus {
           border-radius: 40px;
           color: $primary-700;
           padding: 7px 0px;
+          margin: 20px 0px;
           &:hover {
             transition: 0.2s;
             box-shadow: 0 5px 12px 0 rgba($color: $primary-500, $alpha: 0.5);
