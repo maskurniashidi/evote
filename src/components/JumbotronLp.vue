@@ -131,7 +131,6 @@ header {
         order: 2;
       }
       .right {
-        background-color: lightblue;
         // display: flex;
         // align-items: center;
         order: 1;

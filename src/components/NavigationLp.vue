@@ -8,7 +8,7 @@
         <div class="header">e<span class="vote-span">Vote</span> Himit</div>
       </div>
       <div class="nav-links">
-        <router-link class="btn-masuk" to="#">Masuk</router-link>
+        <router-link class="btn-masuk" to="/LoginPage">Masuk</router-link>
       </div>
     </nav>
     <div class="showcase"></div>
