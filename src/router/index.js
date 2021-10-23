@@ -12,7 +12,7 @@ const routes = [
     component: LandingPage,
   },
   {
-    path: "/error",
+    path: "/errorPage",
     name: "ErrorPage",
     component: ErrorPage,
   },

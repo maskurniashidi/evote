@@ -251,7 +251,7 @@ section {
           place-self: center;
           .contact-form {
             width: 350px;
-            height: 450px;
+            height: 500px;
             .data-form {
               display: flex;
               flex-direction: column;
