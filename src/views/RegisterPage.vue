@@ -28,16 +28,16 @@
             </div>
           </div>
           <div class="form-group form-email">
-            <label for="email">Email</label>
+            <label for="email">Email Pengguna</label>
             <div class="input-field">
               <i class="far fa-envelope"></i>
               <input type="email" class="form-control" placeholder="Masukkan email anda" />
             </div>
           </div>
           <div class="form-group form-nrp">
-            <label for="nrp">Email</label>
+            <label for="nrp">NRP pengguna</label>
             <div class="input-field">
-              <i class="far fa-envelope"></i>
+              <i class="fas fa-th-large"></i>
               <input type="text" class="form-control" placeholder="Masukkan NRP anda" />
             </div>
           </div>
@@ -124,7 +124,7 @@ input:focus {
   min-height: 100vh;
   display: flex;
   .left {
-    width: 50%;
+    width: 60%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -152,7 +152,7 @@ input:focus {
   }
 
   .right {
-    width: 50%;
+    width: 40%;
     min-height: 100vh;
     background: $primary-500;
     box-shadow: -2px 4px 10px rgba(47, 128, 236, 0.4);
@@ -258,9 +258,11 @@ input:focus {
 @media (max-width: 1028px) {
   .container {
     .left {
+      width: 50%;
       padding: 0px 40px;
     }
     .right {
+      width: 50%;
       .login-form {
         width: 80%;
       }
