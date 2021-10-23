@@ -100,14 +100,14 @@ h3 {
 //STYLING
 footer {
   margin-bottom: 0;
-  height: 484px;
+  min-height: 484px;
   width: 100%;
   background: linear-gradient(183.41deg, $third-color -8.57%, $base-color 82.96%);
   font-family: $base-font;
   color: $light-color;
   .container {
     width: 80%;
-    height: 484px;
+    min-height: 484px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -199,7 +199,7 @@ footer {
       width: 90%;
       flex-direction: column;
       align-items: flex-start;
-      height: 484px;
+      min-height: 484px;
       .left-footer {
         width: 100%;
         justify-content: flex-start;

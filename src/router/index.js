@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import LandingPage from "../views/LandingPage.vue";
 import ErrorPage from "../views/ErrorPage.vue";
+import LoginPage from "../views/LoginPage.vue";
 
 Vue.use(VueRouter);
 
@@ -19,7 +20,7 @@ const routes = [
   {
     path: "/LoginPage",
     name: "LoginPage",
-    component: ErrorPage,
+    component: LoginPage,
   },
 ];
 
