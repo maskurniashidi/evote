@@ -60,11 +60,11 @@ export default {
 //STYLING
 .container {
   width: 100%;
-  max-height: 100vh;
+  min-height: 100vh;
   display: flex;
   .left {
     width: 60%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,18 +78,20 @@ export default {
       font-size: 36px;
       font-weight: 300;
       color: $primary-500;
+      text-align: center;
       span {
         color: $primary-900;
       }
     }
     p {
       font-size: 16px;
+      text-align: center;
       color: $secondary-500;
     }
   }
   .right {
     width: 40%;
-    height: 100vh;
+    min-height: 100vh;
     background: $primary-500;
     box-shadow: -2px 4px 10px rgba(47, 128, 236, 0.4);
     display: flex;
@@ -157,6 +159,164 @@ export default {
             &:hover {
               color: $info-900;
               font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//RESPONSIVE
+@media (max-width: 1250px) {
+  .container {
+    font-size: 0.8em;
+    .left {
+      padding: 40px;
+      img {
+      }
+      h2 {
+        span {
+        }
+      }
+      p {
+      }
+    }
+    .right {
+      padding: 40px;
+      .branding {
+        .himit-logo {
+        }
+        .header {
+        }
+        span {
+        }
+      }
+      h3 {
+      }
+
+      h4 {
+      }
+
+      p {
+      }
+
+      .line {
+      }
+
+      h5 {
+      }
+      .social-media-list {
+        ul {
+          li {
+            .link {
+              &:hover {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1028px) {
+}
+@media (max-width: 750px) {
+  .container {
+    font-size: 0.9em;
+    flex-direction: column;
+    .left {
+      width: 100%;
+      img {
+      }
+      h2 {
+        span {
+        }
+      }
+      p {
+      }
+    }
+    .right {
+      width: 100%;
+      .branding {
+        .himit-logo {
+        }
+        .header {
+        }
+        span {
+        }
+      }
+      h3 {
+      }
+
+      h4 {
+      }
+
+      p {
+      }
+
+      .line {
+      }
+
+      h5 {
+      }
+      .social-media-list {
+        ul {
+          li {
+            .link {
+              &:hover {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  .container {
+    font-size: 0.9em;
+    .left {
+      display: none;
+      img {
+      }
+      h2 {
+        span {
+        }
+      }
+      p {
+      }
+    }
+    .right {
+      width: 100%;
+      .branding {
+        .himit-logo {
+        }
+        .header {
+        }
+        span {
+        }
+      }
+      h3 {
+      }
+
+      h4 {
+      }
+
+      p {
+      }
+
+      .line {
+      }
+
+      h5 {
+      }
+      .social-media-list {
+        ul {
+          li {
+            .link {
+              &:hover {
+              }
             }
           }
         }
