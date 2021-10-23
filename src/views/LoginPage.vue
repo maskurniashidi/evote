@@ -230,218 +230,28 @@ input:focus {
 }
 
 //RESPONSIVE BREAKPOINT
-@media (max-width: 1250px) {
-  //STYLING
-  .container {
-    .left {
-      img {
-      }
-      h2 {
-        span {
-        }
-      }
-      p {
-      }
-    }
-
-    .right {
-      .nav-login {
-        .btn-nav {
-        }
-        .btn-daftar {
-          &:hover {
-          }
-        }
-      }
-      .branding {
-        .himit-logo {
-        }
-        .header {
-        }
-        span {
-        }
-      }
-
-      .login-form {
-        .form-title {
-        }
-        .form-text {
-        }
-        .main-form {
-          .form-password {
-            .forget-password {
-              &:hover {
-              }
-            }
-          }
-          .btn-submit {
-            &:hover {
-            }
-          }
-        }
-      }
-    }
-  }
-}
 @media (max-width: 1028px) {
   .container {
     .left {
       width: 50%;
       padding: 0px 40px;
-      img {
-      }
-      h2 {
-        span {
-        }
-      }
-      p {
-      }
     }
-
     .right {
       width: 50%;
-      .nav-login {
-        .btn-nav {
-        }
-        .btn-daftar {
-          &:hover {
-          }
-        }
-      }
-      .branding {
-        .himit-logo {
-        }
-        .header {
-        }
-        span {
-        }
-      }
-
       .login-form {
         width: 80%;
-        .form-title {
-        }
-        .form-text {
-        }
-        .main-form {
-          .form-password {
-            .forget-password {
-              &:hover {
-              }
-            }
-          }
-          .btn-submit {
-            &:hover {
-            }
-          }
-        }
       }
     }
   }
 }
+
 @media (max-width: 750px) {
   .container {
     .left {
       display: none;
-      img {
-      }
-      h2 {
-        span {
-        }
-      }
-      p {
-      }
     }
-
     .right {
       width: 100%;
-      .nav-login {
-        .btn-nav {
-        }
-        .btn-daftar {
-          &:hover {
-          }
-        }
-      }
-      .branding {
-        .himit-logo {
-        }
-        .header {
-        }
-        span {
-        }
-      }
-
-      .login-form {
-        .form-title {
-        }
-        .form-text {
-        }
-        .main-form {
-          .form-password {
-            .forget-password {
-              &:hover {
-              }
-            }
-          }
-          .btn-submit {
-            &:hover {
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media (max-width: 550px) {
-  .container {
-    .left {
-      img {
-      }
-      h2 {
-        span {
-        }
-      }
-      p {
-      }
-    }
-
-    .right {
-      .nav-login {
-        .btn-nav {
-        }
-        .btn-daftar {
-          &:hover {
-          }
-        }
-      }
-      .branding {
-        .himit-logo {
-        }
-        .header {
-        }
-        span {
-        }
-      }
-
-      .login-form {
-        .form-title {
-        }
-        .form-text {
-        }
-        .main-form {
-          .form-password {
-            .forget-password {
-              &:hover {
-              }
-            }
-          }
-          .btn-submit {
-            &:hover {
-            }
-          }
-        }
-      }
     }
   }
 }
