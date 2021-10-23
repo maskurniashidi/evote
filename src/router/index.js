@@ -16,6 +16,11 @@ const routes = [
     name: "ErrorPage",
     component: ErrorPage,
   },
+  {
+    path: "/LoginPage",
+    name: "LoginPage",
+    component: ErrorPage,
+  },
 ];
 
 const router = new VueRouter({
