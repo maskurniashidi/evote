@@ -16,13 +16,13 @@
         <h3 class="mid-title">Website</h3>
         <ul>
           <li>
-            <router-link class="link" to="#">Pengembang aplikasi</router-link>
+            <router-link class="link" to="/Errorpage">Pengembang aplikasi</router-link>
           </li>
           <li>
-            <router-link class="link" to="#">Fitur aplikasi</router-link>
+            <router-link class="link" to="/Errorpage">Fitur aplikasi</router-link>
           </li>
           <li>
-            <router-link class="link" to="#">Kontak Kami</router-link>
+            <router-link class="link" to="/Errorpage">Kontak Kami</router-link>
           </li>
         </ul>
       </div>
