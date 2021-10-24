@@ -2,11 +2,11 @@
   <div class="home">
     <MainNavigation />
     <div class="container">
-      <div class="main">
-        <h1>halo</h1>
-      </div>
       <div class="sidebar">
         <ProfileCardSidebar />
+      </div>
+      <div class="main">
+        <h1>halo</h1>
       </div>
     </div>
   </div>
@@ -27,17 +27,24 @@ export default {
   .container {
     width: 80%;
     margin: 0px auto;
-    background: salmon;
+    // background: salmon;
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: 20px;
     margin-top: 30px;
+    .sidebar {
+      //   background-color: bisque;
+    }
     .main {
       background-color: aqua;
     }
+  }
+}
 
-    .sidebar {
-      background-color: bisque;
+@media (max-width: 1250px) {
+  .home {
+    .container {
+      width: 90%;
     }
   }
 }
