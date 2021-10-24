@@ -48,4 +48,20 @@ export default {
     }
   }
 }
+
+@media (max-width: 750px) {
+  .home {
+    .container {
+      width: 90%;
+      display: block;
+    }
+    .sidebar {
+      display: none;
+    }
+
+    .main {
+      width: 100%;
+    }
+  }
+}
 </style>
