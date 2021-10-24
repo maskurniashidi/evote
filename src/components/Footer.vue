@@ -174,6 +174,14 @@ footer {
   }
 }
 
+@media (max-width: 1250px) {
+  footer {
+    .container {
+      width: 90%;
+    }
+  }
+}
+
 @media (max-width: 975px) {
   .social-media-list {
     flex-direction: column;
@@ -246,6 +254,14 @@ footer {
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  footer {
+    .container {
+      width: 95%;
     }
   }
 }
