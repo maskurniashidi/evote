@@ -36,7 +36,7 @@
             </div>
             <router-link class="forget-password" to="/ErrorPage">Lupa kata sandi ?</router-link>
           </div>
-          <router-link to="/ErrorPage">
+          <router-link to="/HomePage">
             <button class="btn-submit">Masuk</button>
           </router-link>
         </form>

@@ -34,7 +34,7 @@ $light-color: #ffffff;
 header {
   background-color: $base-color;
   font-family: $base-font;
-  widows: 100%;
+  width: 100%;
   height: 90px;
   box-shadow: -2px 4px 10px rgba(47, 128, 236, 0.4);
   nav {
@@ -88,6 +88,15 @@ header {
 
 /*responsive breakpoints*/
 /*tablet*/
+
+@media (max-width: 1250px) {
+  header {
+    nav {
+      width: 95%;
+    }
+  }
+}
+
 @media (max-width: 750px) {
   header {
     height: 70px;
@@ -118,6 +127,7 @@ header {
   header {
     height: 60px;
     nav {
+      width: 95%;
       height: 60px;
       .branding {
         .himit-logo {

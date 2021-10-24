@@ -4,7 +4,7 @@ import LandingPage from "../views/LandingPage.vue";
 import ErrorPage from "../views/ErrorPage.vue";
 import LoginPage from "../views/LoginPage.vue";
 import RegisterPage from "../views/RegisterPage.vue";
-
+import HomePage from "../views/HomePage.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -27,6 +27,11 @@ const routes = [
     path: "/RegisterPage",
     name: "RegisterPage",
     component: RegisterPage,
+  },
+  {
+    path: "/HomePage",
+    name: "HomePage",
+    component: HomePage,
   },
 ];
 
