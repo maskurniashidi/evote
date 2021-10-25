@@ -5,6 +5,7 @@
       <div class="sidebar-home">
         <ProfileCardSidebar class="profile-card" />
         <EventCardSidebar class="event-card" />
+        <ConfrenceCard class="conf-card" />
       </div>
       <div class="main-home">
         <h1>halo</h1>
@@ -17,9 +18,10 @@
 import MainNavigation from "../components/MainNavigation.vue";
 import ProfileCardSidebar from "../components/ProfileCardSidebar.vue";
 import EventCardSidebar from "../components/EventCardSidebar.vue";
+import ConfrenceCard from "../components/ConfrenceCard.vue";
 export default {
   name: "HomePage",
-  components: { MainNavigation, ProfileCardSidebar, EventCardSidebar },
+  components: { MainNavigation, ProfileCardSidebar, EventCardSidebar, ConfrenceCard },
 };
 </script>
 
@@ -40,6 +42,9 @@ export default {
       }
 
       .event-card {
+      }
+
+      .conf-card {
         position: -webkit-sticky;
         position: sticky;
         top: 20px;
