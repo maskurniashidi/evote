@@ -1,11 +1,12 @@
 <template>
   <div class="home">
     <MainNavigation />
-    <div class="container">
-      <div class="sidebar">
-        <ProfileCardSidebar />
+    <div class="container-home">
+      <div class="sidebar-home">
+        <ProfileCardSidebar class="profile-card" />
+        <EventCardSidebar class="event-card" />
       </div>
-      <div class="main">
+      <div class="main-home">
         <h1>halo</h1>
       </div>
     </div>
@@ -15,16 +16,17 @@
 <script>
 import MainNavigation from "../components/MainNavigation.vue";
 import ProfileCardSidebar from "../components/ProfileCardSidebar.vue";
+import EventCardSidebar from "../components/EventCardSidebar.vue";
 export default {
   name: "HomePage",
-  components: { MainNavigation, ProfileCardSidebar },
+  components: { MainNavigation, ProfileCardSidebar, EventCardSidebar },
 };
 </script>
 
 <style lang="scss" scoped>
 .home {
   width: 100%;
-  .container {
+  .container-home {
     width: 80%;
     margin: 0px auto;
     // background: salmon;
@@ -32,10 +34,18 @@ export default {
     grid-template-columns: 1fr 2fr;
     column-gap: 20px;
     margin-top: 30px;
-    .sidebar {
-      //   background-color: bisque;
+    height: 1400px;
+    .sidebar-home {
+      .profile-card {
+      }
+
+      .event-card {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 20px;
+      }
     }
-    .main {
+    .main-home {
       background-color: aqua;
     }
   }
@@ -43,7 +53,7 @@ export default {
 
 @media (max-width: 1250px) {
   .home {
-    .container {
+    .container-home {
       width: 90%;
     }
   }
@@ -51,15 +61,15 @@ export default {
 
 @media (max-width: 750px) {
   .home {
-    .container {
+    .container-home {
       width: 90%;
       display: block;
     }
-    .sidebar {
+    .sidebar-home {
       display: none;
     }
 
-    .main {
+    .main-home {
       width: 100%;
     }
   }
