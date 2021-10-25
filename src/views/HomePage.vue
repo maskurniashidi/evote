@@ -3,7 +3,8 @@
     <MainNavigation />
     <div class="container">
       <div class="sidebar">
-        <ProfileCardSidebar />
+        <ProfileCardSidebar class="profil-card" />
+        <EventCardSidebar class="event-card" />
       </div>
       <div class="main">
         <h1>halo</h1>
@@ -15,9 +16,10 @@
 <script>
 import MainNavigation from "../components/MainNavigation.vue";
 import ProfileCardSidebar from "../components/ProfileCardSidebar.vue";
+import EventCardSidebar from "../components/EventCardSidebar.vue";
 export default {
   name: "HomePage",
-  components: { MainNavigation, ProfileCardSidebar },
+  components: { MainNavigation, ProfileCardSidebar, EventCardSidebar },
 };
 </script>
 
@@ -34,6 +36,12 @@ export default {
     margin-top: 30px;
     .sidebar {
       //   background-color: bisque;
+      .profile-card {
+      }
+
+      .event-card {
+        margin-top: 30px;
+      }
     }
     .main {
       background-color: aqua;
