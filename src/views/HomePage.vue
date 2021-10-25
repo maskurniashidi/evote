@@ -12,6 +12,7 @@
       </div>
       <div class="main-home">
         <h1>halo</h1>
+        <CarouselImg />
       </div>
     </div>
   </div>
@@ -23,9 +24,10 @@ import ProfileCardSidebar from "../components/ProfileCardSidebar.vue";
 import EventCardSidebar from "../components/EventCardSidebar.vue";
 import ConfrenceCard from "../components/ConfrenceCard.vue";
 import LogoutBtn from "../components/LogoutBtn.vue";
+import CarouselImg from "../components/CarouselImg.vue";
 export default {
   name: "HomePage",
-  components: { MainNavigation, ProfileCardSidebar, EventCardSidebar, ConfrenceCard, LogoutBtn },
+  components: { MainNavigation, ProfileCardSidebar, EventCardSidebar, ConfrenceCard, LogoutBtn, CarouselImg },
 };
 </script>
 
