@@ -16,6 +16,7 @@
         <FileSuccession class="file-succession-home" />
       </div>
     </div>
+    <Footer class="footer-home" />
   </div>
 </template>
 
@@ -28,9 +29,10 @@ import LogoutBtn from "../components/LogoutBtn.vue";
 import CarouselImg from "../components/CarouselImg.vue";
 import SuccessionActivity from "../components/SuccessionActivity.vue";
 import FileSuccession from "../components/FileSuccession.vue";
+import Footer from "../components/Footer.vue";
 export default {
   name: "HomePage",
-  components: { MainNavigation, ProfileCardSidebar, EventCardSidebar, ConfrenceCard, LogoutBtn, CarouselImg, SuccessionActivity, FileSuccession },
+  components: { MainNavigation, ProfileCardSidebar, EventCardSidebar, ConfrenceCard, LogoutBtn, CarouselImg, SuccessionActivity, FileSuccession, Footer },
 };
 </script>
 
@@ -38,7 +40,6 @@ export default {
 .home {
   width: 100%;
   background: #f5f8fa;
-
   .nav-home {
     position: relative;
     z-index: 99;
@@ -52,7 +53,6 @@ export default {
     grid-template-columns: 1fr 2fr;
     column-gap: 20px;
     margin-top: 30px;
-    height: 1400px;
     .sidebar-home {
       .profile-card {
       }
@@ -81,6 +81,10 @@ export default {
         margin-top: 30px;
       }
     }
+  }
+
+  .footer-home {
+    margin-top: 100px;
   }
 }
 
