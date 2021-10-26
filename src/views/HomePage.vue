@@ -13,6 +13,7 @@
       <div class="main-home">
         <CarouselImg class="showcase-home" />
         <SuccessionActivity class="succession-activity-home" />
+        <FileSuccession class="file-succession-home" />
       </div>
     </div>
   </div>
@@ -26,9 +27,10 @@ import ConfrenceCard from "../components/ConfrenceCard.vue";
 import LogoutBtn from "../components/LogoutBtn.vue";
 import CarouselImg from "../components/CarouselImg.vue";
 import SuccessionActivity from "../components/SuccessionActivity.vue";
+import FileSuccession from "../components/FileSuccession.vue";
 export default {
   name: "HomePage",
-  components: { MainNavigation, ProfileCardSidebar, EventCardSidebar, ConfrenceCard, LogoutBtn, CarouselImg, SuccessionActivity },
+  components: { MainNavigation, ProfileCardSidebar, EventCardSidebar, ConfrenceCard, LogoutBtn, CarouselImg, SuccessionActivity, FileSuccession },
 };
 </script>
 
@@ -72,6 +74,10 @@ export default {
       }
 
       .succession-activity-home {
+        margin-top: 30px;
+      }
+
+      .file-succession-home {
         margin-top: 30px;
       }
     }
