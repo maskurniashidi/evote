@@ -12,6 +12,7 @@
       </div>
       <div class="main-home">
         <CarouselImg class="showcase-home" />
+        <SuccessionActivity class="succession-activity-home" />
       </div>
     </div>
   </div>
@@ -24,9 +25,10 @@ import EventCardSidebar from "../components/EventCardSidebar.vue";
 import ConfrenceCard from "../components/ConfrenceCard.vue";
 import LogoutBtn from "../components/LogoutBtn.vue";
 import CarouselImg from "../components/CarouselImg.vue";
+import SuccessionActivity from "../components/SuccessionActivity.vue";
 export default {
   name: "HomePage",
-  components: { MainNavigation, ProfileCardSidebar, EventCardSidebar, ConfrenceCard, LogoutBtn, CarouselImg },
+  components: { MainNavigation, ProfileCardSidebar, EventCardSidebar, ConfrenceCard, LogoutBtn, CarouselImg, SuccessionActivity },
 };
 </script>
 
@@ -67,6 +69,10 @@ export default {
     .main-home {
       // background-color: aqua;
       .showcase-home {
+      }
+
+      .succession-activity-home {
+        margin-top: 30px;
       }
     }
   }
