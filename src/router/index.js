@@ -5,6 +5,7 @@ import ErrorPage from "../views/ErrorPage.vue";
 import LoginPage from "../views/LoginPage.vue";
 import RegisterPage from "../views/RegisterPage.vue";
 import HomePage from "../views/HomePage.vue";
+import EventViewPage from "../views/EventViewPage.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -32,6 +33,11 @@ const routes = [
     path: "/HomePage",
     name: "HomePage",
     component: HomePage,
+  },
+  {
+    path: "/EventViewPage",
+    name: "EventViewPage",
+    component: EventViewPage,
   },
 ];
 
