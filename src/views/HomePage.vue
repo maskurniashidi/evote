@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <MainNavigation />
+    <MainNavigation class="nav-home" />
     <div class="container-home">
       <div class="sidebar-home">
         <ProfileCardSidebar class="profile-card" />
@@ -11,8 +11,7 @@
         </div>
       </div>
       <div class="main-home">
-        <h1>halo</h1>
-        <CarouselImg />
+        <CarouselImg class="showcase-home" />
       </div>
     </div>
   </div>
@@ -34,6 +33,13 @@ export default {
 <style lang="scss" scoped>
 .home {
   width: 100%;
+  background: #f5f8fa;
+
+  .nav-home {
+    position: relative;
+    z-index: 99;
+  }
+
   .container-home {
     width: 80%;
     margin: 0px auto;
@@ -59,7 +65,9 @@ export default {
       }
     }
     .main-home {
-      background-color: aqua;
+      // background-color: aqua;
+      .showcase-home {
+      }
     }
   }
 }

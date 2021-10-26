@@ -1,11 +1,13 @@
 <template>
-  <div>
-    <b-carousel id="carousel-no-animation" style="text-shadow: 0px 0px 2px #000" no-animation indicators img-width="1024" img-height="480">
-      <b-carousel-slide caption="First slide" img-src="https://picsum.photos/1024/480/?image=10"></b-carousel-slide>
-      <b-carousel-slide caption="Second Slide" img-src="https://picsum.photos/1024/480/?image=12"></b-carousel-slide>
-      <b-carousel-slide caption="Third Slide" img-src="https://picsum.photos/1024/480/?image=22"></b-carousel-slide>
-      <b-carousel-slide caption="Fourth Slide" img-src="https://picsum.photos/1024/480/?image=23"></b-carousel-slide>
-    </b-carousel>
+  <div class="carousel-container">
+    <img src="https://placeimg.com/1000/600/any" alt="" />
+    <div class="card-dpt">
+      <h3>Suarakan suaramu dalam Suksesi HIMIT PENS 2021</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales sit amet orci ac pulvinar. Ut imperdiet augue quis convallis finibus.</p>
+      <router-link to="#" class="btn-dpt">
+        Daftar DPT
+      </router-link>
+    </div>
   </div>
 </template>
 
@@ -13,19 +15,71 @@
 export default {
   name: "CarouselImg",
   components: {},
-  data() {
-    return {
-      slide: 0,
-      sliding: null,
-    };
-  },
-  methods: {
-    onSlideStart() {
-      this.sliding = true;
-    },
-    onSlideEnd() {
-      this.sliding = false;
-    },
-  },
+  methods: {},
 };
 </script>
+
+<style lang="scss" scoped>
+//IMPORT
+@import "./modules/variables";
+.carousel-container {
+  width: 100%;
+  position: relative;
+  img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: -2px 4px 10px rgba(47, 128, 236, 0.4);
+    border-radius: 8px;
+  }
+  .card-dpt {
+    position: absolute;
+    top: 0;
+    width: 60%;
+    margin-top: 40px;
+    margin-left: 35px;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    h3 {
+      color: $primary-500;
+      font-weight: 500;
+      font-size: 20px;
+    }
+    p {
+      margin: 15px 0px;
+      font-size: 12px;
+      font-weight: 300;
+      color: $secondary-500;
+    }
+    .btn-dpt {
+      text-decoration: none;
+      background: #2f80ec;
+      border-radius: 4px;
+      padding: 5px 10px;
+      color: #ffffff;
+      &:hover {
+        background: #2165be;
+      }
+    }
+  }
+}
+
+@media (max-width: 1028px) {
+  .carousel-container {
+    img {
+    }
+    .card-dpt {
+      h3 {
+        margin-bottom: 20px;
+      }
+      p {
+        display: none;
+      }
+      .btn-dpt {
+        &:hover {
+        }
+      }
+    }
+  }
+}
+</style>
