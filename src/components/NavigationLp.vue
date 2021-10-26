@@ -79,7 +79,6 @@ header {
           background-color: $light-color;
           color: $base-color;
           font-weight: bold;
-          transition: 0.5s;
         }
       }
     }
