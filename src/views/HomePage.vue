@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <MainNavigation />
+    <MainNavigation class="nav-home" />
     <div class="container-home">
       <div class="sidebar-home">
         <ProfileCardSidebar class="profile-card" />
@@ -11,7 +11,7 @@
         </div>
       </div>
       <div class="main-home">
-        <h1>halo</h1>
+        <CarouselImg class="showcase-home" />
       </div>
     </div>
   </div>
@@ -23,15 +23,23 @@ import ProfileCardSidebar from "../components/ProfileCardSidebar.vue";
 import EventCardSidebar from "../components/EventCardSidebar.vue";
 import ConfrenceCard from "../components/ConfrenceCard.vue";
 import LogoutBtn from "../components/LogoutBtn.vue";
+import CarouselImg from "../components/CarouselImg.vue";
 export default {
   name: "HomePage",
-  components: { MainNavigation, ProfileCardSidebar, EventCardSidebar, ConfrenceCard, LogoutBtn },
+  components: { MainNavigation, ProfileCardSidebar, EventCardSidebar, ConfrenceCard, LogoutBtn, CarouselImg },
 };
 </script>
 
 <style lang="scss" scoped>
 .home {
   width: 100%;
+  background: #f5f8fa;
+
+  .nav-home {
+    position: relative;
+    z-index: 99;
+  }
+
   .container-home {
     width: 80%;
     margin: 0px auto;
@@ -57,7 +65,9 @@ export default {
       }
     }
     .main-home {
-      background-color: aqua;
+      // background-color: aqua;
+      .showcase-home {
+      }
     }
   }
 }
