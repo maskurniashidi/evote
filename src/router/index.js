@@ -6,6 +6,7 @@ import LoginPage from "../views/LoginPage.vue";
 import RegisterPage from "../views/RegisterPage.vue";
 import HomePage from "../views/HomePage.vue";
 import EventViewPage from "../views/EventViewPage.vue";
+import FileViewPage from "../views/FileViewPage.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -38,6 +39,11 @@ const routes = [
     path: "/EventViewPage",
     name: "EventViewPage",
     component: EventViewPage,
+  },
+  {
+    path: "/FileViewPage",
+    name: "FileViewPage",
+    component: FileViewPage,
   },
 ];
 
