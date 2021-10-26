@@ -2,7 +2,7 @@
   <div class="file-succession">
     <div class="file-succession-title">
       <h2>Berkas Suksesi</h2>
-      <router-link to="#" class="btn-view-all">
+      <router-link to="/FileViewPage" class="btn-view-all">
         lihat semua
       </router-link>
     </div>
