@@ -2,7 +2,7 @@
   <div class="succession-activity">
     <div class="succession-activity-title">
       <h2>Kegiatan Suksesi</h2>
-      <router-link to="#" class="btn-view-all">
+      <router-link to="/EventViewPage" class="btn-view-all">
         lihat semua
       </router-link>
     </div>
