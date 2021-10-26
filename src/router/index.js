@@ -7,6 +7,7 @@ import RegisterPage from "../views/RegisterPage.vue";
 import HomePage from "../views/HomePage.vue";
 import EventViewPage from "../views/EventViewPage.vue";
 import FileViewPage from "../views/FileViewPage.vue";
+import PaslonPage from "../views/PaslonPage.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -44,6 +45,11 @@ const routes = [
     path: "/FileViewPage",
     name: "FileViewPage",
     component: FileViewPage,
+  },
+  {
+    path: "/PaslonPage",
+    name: "PaslonPage",
+    component: PaslonPage,
   },
 ];
 
