@@ -1,7 +1,7 @@
 <template>
   <div class="succession-activity">
     <div class="succession-activity-title">
-      <h2>Kegaitan Suksesi</h2>
+      <h2>Kegiatan Suksesi</h2>
       <router-link to="#" class="btn-view-all">
         lihat semua
       </router-link>
@@ -44,7 +44,7 @@ export default {
   }
   .main-card {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
     margin-top: 10px;
   }

@@ -1,6 +1,8 @@
 <template>
   <div class="file-succession-card">
-    <img src="https://placeimg.com/640/300/any" alt="" />
+    <div class="img-card">
+      <img src="https://placeimg.com/640/300/any" alt="" />
+    </div>
     <div class="card-title">
       <h2>Petunjuk pelaksanaan Suksesi HIMIT PENS 2021</h2>
       <p>Ut imperdiet augue quis convallis finibus.</p>
@@ -28,8 +30,18 @@ export default {
   box-shadow: -2px 4px 10px rgba(47, 128, 236, 0.4);
   border-radius: 8px;
   overflow: hidden;
-  img {
-    width: 100%;
+  cursor: pointer;
+  transition: transform 0.5s;
+  .img-card {
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      transition: transform 0.5s ease-in-out;
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
   }
   .card-title {
     padding: 0px 20px;
@@ -59,6 +71,10 @@ export default {
     i {
       color: $primary-500;
     }
+  }
+
+  &:hover {
+    transform: scale(0.97);
   }
 }
 </style>
