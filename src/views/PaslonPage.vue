@@ -10,7 +10,9 @@
           <LogoutBtn class="logout-card" />
         </div>
       </div>
-      <div class="main-paslon"></div>
+      <div class="main-paslon">
+        <PaslonCard class="paslon-card-section" />
+      </div>
     </div>
     <Footer class="footer-paslon" />
   </div>
@@ -22,10 +24,11 @@ import ProfileCardSidebar from "../components/ProfileCardSidebar.vue";
 import EventCardSidebar from "../components/EventCardSidebar.vue";
 import ConfrenceCard from "../components/ConfrenceCard.vue";
 import LogoutBtn from "../components/LogoutBtn.vue";
+import PaslonCard from "../components/PaslonCard.vue";
 import Footer from "../components/Footer.vue";
 export default {
   name: "PaslonPage",
-  components: { MainNavigation, ProfileCardSidebar, EventCardSidebar, ConfrenceCard, LogoutBtn, Footer },
+  components: { MainNavigation, ProfileCardSidebar, PaslonCard, EventCardSidebar, ConfrenceCard, LogoutBtn, Footer },
 };
 </script>
 
