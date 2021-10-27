@@ -10,7 +10,7 @@
         <i class="fas fa-map-marker-alt fa-xs"></i>
         <p>zoom meeting</p>
       </div>
-      <router-link to="#" class="btn-view">
+      <router-link to="/DetailEventViewPage" class="btn-view">
         Lihat
       </router-link>
     </div>
