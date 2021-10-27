@@ -9,6 +9,7 @@ import EventViewPage from "../views/EventViewPage.vue";
 import FileViewPage from "../views/FileViewPage.vue";
 import PaslonPage from "../views/PaslonPage.vue";
 import DetailEventViewPage from "../views/DetailEventViewPage.vue";
+import DetailFileViewPage from "../views/DetailFileViewPage.vue";
 
 Vue.use(VueRouter);
 
@@ -57,6 +58,11 @@ const routes = [
     path: "/DetailEventViewPage",
     name: "DetailEventViewPage",
     component: DetailEventViewPage,
+  },
+  {
+    path: "/DetailFileViewPage",
+    name: "DetailFileViewPage",
+    component: DetailFileViewPage,
   },
 ];
 

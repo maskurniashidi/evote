@@ -8,7 +8,7 @@
       <p>Ut imperdiet augue quis convallis finibus.</p>
     </div>
     <div class="look-all">
-      <p>Lihat selengkapnya</p>
+      <router-link class="p" to="/DetailFileViewPage">Lihat selengkapnya</router-link>
       <i class="fas fa-arrow-circle-right fa-1"></i>
     </div>
   </div>
@@ -64,9 +64,10 @@ export default {
     align-items: center;
     margin: 20px 0px;
     justify-content: flex-end;
-    p {
+    .p {
       margin-right: 10px;
       color: $primary-500;
+      text-decoration: none;
     }
     i {
       color: $primary-500;
