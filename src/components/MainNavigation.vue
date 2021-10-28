@@ -32,7 +32,7 @@
           <img src="https://placeimg.com/50/50/people" alt="" />
           <div class="info">
             <h4>Maskurnia Shidi</h4>
-            <router-link class="btn-view" to="#">lihat profil</router-link>
+            <router-link class="btn-view" to="/ProfilePage">lihat profil</router-link>
           </div>
         </div>
         <hr class="line" />
