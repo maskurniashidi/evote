@@ -1,9 +1,9 @@
 <template>
   <div class="detail-file-card">
-    <div class="detail-event-card-top">
+    <div class="detail-file-card-top">
       <h2>Detail berkas suksesi</h2>
     </div>
-    <div class="detail-event-card-bottom">
+    <div class="detail-file-card-bottom">
       <div class="bottom-left-card">
         <img src="https://placeimg.com/640/400/tech" alt="" />
         <div class="card-title">
@@ -64,7 +64,7 @@ export default {
 <style lang="scss" scoped>
 //IMPORT
 @import "./modules/variables";
-.detail-event-card {
+.detail-file-card {
   width: 100%;
   &-top {
     margin-bottom: 20px;
@@ -154,7 +154,7 @@ export default {
 }
 
 @media (max-width: 750px) {
-  .detail-event-card {
+  .detail-file-card {
     width: 100%;
     &-top {
     }

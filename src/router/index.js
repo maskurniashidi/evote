@@ -10,6 +10,7 @@ import FileViewPage from "../views/FileViewPage.vue";
 import PaslonPage from "../views/PaslonPage.vue";
 import DetailEventViewPage from "../views/DetailEventViewPage.vue";
 import DetailFileViewPage from "../views/DetailFileViewPage.vue";
+import DetailPaslon from "../views/DetailPaslon.vue";
 
 Vue.use(VueRouter);
 
@@ -63,6 +64,11 @@ const routes = [
     path: "/DetailFileViewPage",
     name: "DetailFileViewPage",
     component: DetailFileViewPage,
+  },
+  {
+    path: "/DetailPaslon",
+    name: "DetailPaslon",
+    component: DetailPaslon,
   },
 ];
 

@@ -32,6 +32,7 @@ export default {
 
 .app {
   min-height: 100vh;
+  background: #f5f8fa;
 }
 
 .link {
