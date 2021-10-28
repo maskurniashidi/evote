@@ -1,67 +1,46 @@
 <template>
-  <div class="profile-main-card">
-    <h2>Lihat Profile</h2>
-    <div class="profile-card-container">
-      <h3>Informasi personal</h3>
-      <div class="profile-card-container-main">
-        <div class="profile-card-container-main-left">
-          <div class="profile-pic">
+  <div class="violation-report-main-card">
+    <h2>Laporkan pelanggaran</h2>
+    <div class="violation-report-card-container">
+      <h3>Informasi pelanggaran</h3>
+      <div class="violation-report-card-container-main">
+        <div class="violation-report-card-container-main-left">
+          <div class="violation-report-pic">
             <label class="-label" for="file">
               <span class="glyphicon glyphicon-camera"></span>
               <span>Ubah</span>
             </label>
             <input id="file" type="file" @change="loadFile" />
-            <img src="https://cdn.pixabay.com/photo/2017/08/06/21/01/louvre-2596278_960_720.jpg" id="output" width="200" />
+            <img src="../assets/img/upload-img.png" id="output" width="200" />
           </div>
         </div>
-        <div class="profile-card-container-main-right">
-          <div class="profile-form">
-            <div class="profile-input-field">
+        <div class="violation-report-card-container-main-right">
+          <div class="violation-report-form">
+            <div class="violation-report-input-field">
               <label for="name">Nama Pengguna</label>
-              <div class="profile-input-handler">
-                <input type="text" value="Maskurnia Shidi" :disabled="disabled == 0" />
-                <button @click="disabled = (disabled + 1) % 2">
-                  <i class="fas fa-pencil-alt"></i>
-                </button>
+              <div class="violation-report-input-handler">
+                <input type="text" placeholder="Masukkan nama anda" />
               </div>
             </div>
-            <div class="profile-input-field">
-              <label for="email">Email Pengguna</label>
-              <div class="profile-input-handler">
-                <input type="email" value="maskurshidi12@gmail.com" :disabled="disabled == 0" />
-                <button @click="disabled = (disabled + 1) % 2">
-                  <i class="fas fa-pencil-alt"></i>
-                </button>
+            <div class="violation-report-input-field">
+              <label for="pihak">Pihak terlapor</label>
+              <div class="violation-report-input-handler">
+                <input type="text" placeholder="Masukkan nama pihak terlapor" />
               </div>
             </div>
-            <div class="profile-input-field">
-              <label for="nrp">NRP</label>
-              <div class="profile-input-handler">
-                <input type="text" value="2110191026" :disabled="disabled == 0" />
-                <button @click="disabled = (disabled + 1) % 2">
-                  <i class="fas fa-pencil-alt"></i>
-                </button>
+            <div class="violation-report-input-field">
+              <label for="nrp">Kontak</label>
+              <div class="violation-report-input-handler">
+                <input type="text" placeholder="Masukkan kontak yang dapat dihubungi" />
               </div>
             </div>
-            <div class="profile-input-field">
-              <label for="class">Kelas Asal</label>
-              <div class="profile-input-handler">
-                <input type="text" value="3 D4 Teknik Informatika" :disabled="disabled == 0" />
-                <button @click="disabled = (disabled + 1) % 2">
-                  <i class="fas fa-pencil-alt"></i>
-                </button>
+            <div class="violation-report-input-field">
+              <label for="des-pelanggaran">Deskripsi pelanggaran</label>
+              <div class="violation-report-input-handler">
+                <textarea name="message" id="message" class="form-control" placeholder="Masukkan detail informasi pelanggaran"></textarea>
               </div>
             </div>
-            <div class="profile-input-field">
-              <label for="password">Kata sandi</label>
-              <div class="profile-input-handler">
-                <input type="password" value="12345656767" :disabled="disabled == 0" />
-                <button @click="disabled = (disabled + 1) % 2">
-                  <i class="fas fa-pencil-alt"></i>
-                </button>
-              </div>
-            </div>
-            <button class="btn-edit-profile">Selesai</button>
+            <button class="btn-edit-violation-report">Selesai</button>
           </div>
         </div>
       </div>
@@ -71,7 +50,7 @@
 
 <script>
 export default {
-  name: "ProfileCard",
+  name: "ViolationReportCard",
   components: {},
   data() {
     return {
@@ -98,28 +77,35 @@ export default {
 }
 
 $circleSize: 150px;
-$radius: 50%;
 $shadow: 0 0 10px 0 rgba(255, 255, 255, 0.35);
 $fontColor: rgb(250, 250, 250);
 
-input:focus {
+input:focus,
+textarea:focus {
   outline: none;
 }
 
-.profile-main-card {
-  .profile-card-container {
+textarea {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  border: none;
+}
+
+.violation-report-main-card {
+  .violation-report-card-container {
     background: #ffffff;
     box-shadow: -2px 4px 10px rgba(47, 128, 236, 0.4);
     border-radius: 8px;
     padding: 20px 50px;
     margin-top: 10px;
-    .profile-card-container-main {
+    .violation-report-card-container-main {
       display: flex;
       margin-top: 20px;
       &-left {
         h3 {
         }
-        .profile-pic {
+        .violation-report-pic {
           color: transparent;
           transition: all 0.3s ease;
           @include object-center;
@@ -137,7 +123,6 @@ input:focus {
             width: $circleSize;
             height: $circleSize;
             box-shadow: $shadow;
-            border-radius: $radius;
             z-index: 0;
           }
 
@@ -154,7 +139,6 @@ input:focus {
               z-index: 10000;
               color: $fontColor;
               transition: background-color 0.2s ease-in-out;
-              border-radius: $radius;
               margin-bottom: 0;
             }
           }
@@ -169,37 +153,29 @@ input:focus {
 
       &-right {
         flex: 1;
-        .profile-form {
+        .violation-report-form {
           display: flex;
           flex-direction: column;
           margin-left: 50px;
-          .profile-input-field {
+          .violation-report-input-field {
             width: 100%;
             margin-bottom: 10px;
             label {
             }
-            .profile-input-handler {
+            .violation-report-input-handler {
               border: 1px solid #8f959d;
               box-sizing: border-box;
               border-radius: 8px;
               overflow: hidden;
-              display: flex;
-              align-items: center;
               padding: 5px 10px;
               input {
-                flex: 1;
                 background: transparent;
                 border: none;
-              }
-              button {
-                background: transparent;
-                border: none;
-                cursor: pointer;
-                outline: none;
+                width: 100%;
               }
             }
           }
-          .btn-edit-profile {
+          .btn-edit-violation-report {
             background: #2f80ec;
             border-radius: 8px;
             color: #ffffff;
@@ -215,12 +191,12 @@ input:focus {
 }
 
 @media (max-width: 750px) {
-  .profile-main-card {
-    .profile-card-container {
+  .violation-report-main-card {
+    .violation-report-card-container {
       h3 {
         text-align: center;
       }
-      .profile-card-container-main {
+      .violation-report-card-container-main {
         display: flex;
         flex-direction: column;
         &-left {
@@ -230,7 +206,7 @@ input:focus {
         &-right {
           width: 100%;
           margin: 20px 0px;
-          .profile-form {
+          .violation-report-form {
             margin-left: 0px;
           }
         }
