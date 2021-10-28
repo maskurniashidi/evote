@@ -5,7 +5,7 @@
       <label class="tab-label" for="chck1">Kegiatan Terkait</label>
       <div class="tab-content">
         <div class="boxes-events">
-          <router-link class="evote-event" to="#">
+          <router-link class="evote-event" to="/RegisDPTPage">
             <i class="fas fa-user-friends"></i>
             <div class="content">
               <h4>Pendaftaran DPT</h4>
@@ -19,7 +19,7 @@
               <p>Laporkan segala masalah yang terjadi dalam Suksesi HIMIT</p>
             </div>
           </router-link>
-          <router-link class="evote-event" to="#">
+          <router-link class="evote-event" to="/ErrorPage">
             <i class="far fa-edit"></i>
             <div class="content">
               <h4>Kritik dan saran</h4>

@@ -48,7 +48,7 @@
         <div class="evote-events">
           <h4>Kegiatan Terkait</h4>
           <div class="boxes-events">
-            <router-link class="evote-event" to="#">
+            <router-link class="evote-event" to="/RegisDPTPage">
               <h4>Pendaftaran DPT</h4>
               <p>Daftarkan akun anda agar terdaftar sebagai DPT Suksesi HIMIT</p>
             </router-link>
@@ -56,7 +56,7 @@
               <h4>Pelaporan kecurangan</h4>
               <p>Laporkan segala masalah yang terjadi dalam Suksesi HIMIT</p>
             </router-link>
-            <router-link class="evote-event" to="#">
+            <router-link class="evote-event" to="/ErrorPage">
               <h4>Kritik dan saran</h4>
               <p>Berikan kritik dan saran terkait suksesi HIMIT</p>
             </router-link>
