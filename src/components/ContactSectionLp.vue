@@ -232,20 +232,9 @@ section {
     width: 95%;
 
     .contact-section {
-      .header {
-        span {
-        }
-      }
-      .line {
-      }
-
       .main-form {
         .left {
           place-self: center;
-          .top-card {
-          }
-          .bottom-card {
-          }
         }
         .right {
           place-self: center;
@@ -256,10 +245,6 @@ section {
               display: flex;
               flex-direction: column;
               gap: 0;
-              .form-name {
-              }
-              .form-email {
-              }
             }
           }
         }
