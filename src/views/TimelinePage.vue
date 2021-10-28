@@ -12,6 +12,7 @@
       </div>
       <div class="main-timeline-page">
         <JumbotronTimeline />
+        <TimelineCard class="timeline-card" />
       </div>
     </div>
     <Footer class="footer-timeline-page" />
@@ -26,9 +27,10 @@ import ConfrenceCard from "../components/ConfrenceCard.vue";
 import LogoutBtn from "../components/LogoutBtn.vue";
 import Footer from "../components/Footer.vue";
 import JumbotronTimeline from "../components/JumbotronTimeline.vue";
+import TimelineCard from "../components/TimelineCard.vue";
 export default {
   name: "TimelinePage",
-  components: { JumbotronTimeline, MainNavigation, ProfileCardSidebar, EventCardSidebar, ConfrenceCard, LogoutBtn, Footer },
+  components: { JumbotronTimeline, MainNavigation, ProfileCardSidebar, EventCardSidebar, ConfrenceCard, LogoutBtn, Footer, TimelineCard },
 };
 </script>
 
@@ -66,6 +68,9 @@ export default {
     }
     .main-timeline-page {
       // background-color: aqua;
+      .timeline-card {
+        margin-top: 20px;
+      }
     }
   }
 
