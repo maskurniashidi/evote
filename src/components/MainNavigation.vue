@@ -52,7 +52,7 @@
               <h4>Pendaftaran DPT</h4>
               <p>Daftarkan akun anda agar terdaftar sebagai DPT Suksesi HIMIT</p>
             </router-link>
-            <router-link class="evote-event" to="#">
+            <router-link class="evote-event" to="/ViolationReport">
               <h4>Pelaporan kecurangan</h4>
               <p>Laporkan segala masalah yang terjadi dalam Suksesi HIMIT</p>
             </router-link>
