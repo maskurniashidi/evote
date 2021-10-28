@@ -12,7 +12,7 @@
               <p>Daftarkan akun anda agar terdaftar sebagai DPT Suksesi HIMIT</p>
             </div>
           </router-link>
-          <router-link class="evote-event" to="#">
+          <router-link class="evote-event" to="/ViolationReport">
             <i class="fas fa-volume-up"></i>
             <div class="content">
               <h4>Pelaporan kecurangan</h4>
