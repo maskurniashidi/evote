@@ -1,17 +1,34 @@
 <template>
   <div class="jumbotron-timeline">
     <img src="https://placeimg.com/1000/600/tech" alt="" />
-    <div class="card-dpt">
-      <h3>Pemungutan suara Suksesi HIMIT PENS 2021</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales sit amet orci ac pulvinar. Ut imperdiet augue quis convallis finibus.</p>
+    <div class="card-token">
+      <h2>Pemungutan suara suksesi HIMIT PENS 2021</h2>
+      <div>
+        <Countdown style="color: #fff" deadline="November 22, 2021"></Countdown>
+        <Countdown style="display:none;" end="November 22, 2021s"></Countdown>
+      </div>
+      <div class="token-field">
+        <h4>Masukkan token untuk vote</h4>
+        <div class="token-input-field">
+          <input class="token-input" type="text" name="token" id="token" />
+          <router-link class="btn-token" to="#">
+            Kirim
+          </router-link>
+        </div>
+        <div class="petunjuk">
+          <p>Petunjuk pelaksanaan</p>
+          <i class="fas fa-chevron-circle-right"></i>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import Countdown from "vuejs-countdown";
 export default {
   name: "JumbotronTimeline",
-  components: {},
+  components: { Countdown },
 };
 </script>
 
@@ -27,24 +44,66 @@ export default {
     box-shadow: -2px 4px 10px rgba(47, 128, 236, 0.4);
     border-radius: 8px;
   }
-  .card-dpt {
+  .card-token {
     position: absolute;
     top: 0;
-    width: 60%;
+    width: 70%;
     margin-top: 40px;
     margin-left: 35px;
-    background: #ffffff;
     padding: 20px;
-    h3 {
-      color: $primary-500;
-      font-weight: 500;
-      font-size: 20px;
+    h2 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 28px;
+      color: #ffffff;
     }
-    p {
-      margin: 15px 0px;
-      font-size: 12px;
-      font-weight: 300;
-      color: $secondary-500;
+    .token-field {
+      width: 100%;
+      margin-top: 10px;
+      h4 {
+        font-weight: normal;
+        font-size: 18px;
+        color: #ffffff;
+      }
+      .token-input-field {
+        margin-top: 5px;
+        background: #ffffff;
+        display: flex;
+        border-radius: 8px;
+        height: 50px;
+        align-items: center;
+        padding: 0px 5px;
+        .token-input {
+          flex: 1;
+          height: 50px;
+          font-size: 20px;
+          margin-right: 10px;
+          background: transparent;
+          border: none;
+          outline: none;
+        }
+        .btn-token {
+          padding: 10px 30px;
+          background: #2f80ec;
+          border-radius: 8px;
+          text-decoration: none;
+          color: #fff;
+        }
+      }
+
+      .petunjuk {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        p {
+          margin-right: 10px;
+          font-size: 14px;
+          color: #fff;
+        }
+        i {
+          color: #fff;
+        }
+      }
     }
   }
 }
