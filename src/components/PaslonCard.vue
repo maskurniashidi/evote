@@ -1,7 +1,7 @@
 <template>
   <div class="paslon-cards">
     <div class="paslon-cards-top">
-      <div class="paslon-card">
+      <router-link to="/DetailPaslonPage" class="paslon-card">
         <div class="img-card">
           <img src="https://placeimg.com/640/300/tech" alt="" />
         </div>
@@ -13,8 +13,8 @@
           <p>Lihat selengkapnya</p>
           <i class="fas fa-arrow-circle-right fa-1"></i>
         </div>
-      </div>
-      <div class="paslon-card">
+      </router-link>
+      <router-link to="/DetailPaslonPage" class="paslon-card">
         <div class="img-card">
           <img src="https://placeimg.com/640/301/tech" alt="" />
         </div>
@@ -26,7 +26,7 @@
           <p>Lihat selengkapnya</p>
           <i class="fas fa-arrow-circle-right fa-1"></i>
         </div>
-      </div>
+      </router-link>
     </div>
 
     <div class="paslon-card-bottom">
@@ -84,6 +84,7 @@ export default {
       overflow: hidden;
       cursor: pointer;
       transition: transform 0.5s;
+      text-decoration: none;
       .img-card {
         overflow: hidden;
 
