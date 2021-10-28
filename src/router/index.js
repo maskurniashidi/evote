@@ -10,8 +10,9 @@ import FileViewPage from "../views/FileViewPage.vue";
 import PaslonPage from "../views/PaslonPage.vue";
 import DetailEventViewPage from "../views/DetailEventViewPage.vue";
 import DetailFileViewPage from "../views/DetailFileViewPage.vue";
-import DetailPaslonPage from "../views/DetailPaslonPage";
+import DetailPaslonPage from "../views/DetailPaslonPage.vue";
 import TimelinePage from "../views/TimelinePage.vue";
+import ProfilePage from "../views/ProfilePage.vue";
 
 Vue.use(VueRouter);
 
@@ -75,6 +76,11 @@ const routes = [
     path: "/TimelinePage",
     name: "TimelinePage",
     component: TimelinePage,
+  },
+  {
+    path: "/ProfilePage",
+    name: "ProfilePage",
+    component: ProfilePage,
   },
 ];
 
