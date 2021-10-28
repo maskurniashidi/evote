@@ -11,7 +11,7 @@
         <ul v-show="!mobile">
           <router-link class="link" to="/HomePage"><i class="fas fa-home" style="color:white"></i></router-link>
           <router-link class="link" to="/PaslonPage"><i class="fas fa-book-open" style="color:white"></i></router-link>
-          <router-link class="link" to="#"><i class="fas fa-stream" style="color:white"></i></router-link>
+          <router-link class="link" to="/TimelinePage"><i class="fas fa-stream" style="color:white"></i></router-link>
         </ul>
       </div>
       <menuIcon @click="toggleMobileNav" class="menu-icon" v-show="mobile" />
