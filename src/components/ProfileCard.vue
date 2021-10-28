@@ -204,6 +204,8 @@ input:focus {
             color: #ffffff;
             padding: 5px 30px;
             align-self: flex-end;
+            border: none;
+            cursor: pointer;
           }
         }
       }
