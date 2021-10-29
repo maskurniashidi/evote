@@ -12,7 +12,7 @@
           <h4>Masukkan token untuk vote</h4>
           <div class="token-input-field">
             <input class="token-input" type="text" name="token" id="token" />
-            <router-link class="btn-token" to="#">
+            <router-link class="btn-token" to="/SelectPaslon">
               Kirim
             </router-link>
           </div>

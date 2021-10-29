@@ -15,6 +15,7 @@ import TimelinePage from "../views/TimelinePage.vue";
 import ProfilePage from "../views/ProfilePage.vue";
 import ViolationReport from "../views/ViolationReport.vue";
 import RegisDPTPage from "../views/RegisDPTPage.vue";
+import SelectPaslon from "../views//SelectPaslon.vue";
 
 Vue.use(VueRouter);
 
@@ -93,6 +94,11 @@ const routes = [
     path: "/RegisDPTPage",
     name: "RegisDPTPage",
     component: RegisDPTPage,
+  },
+  {
+    path: "/SelectPaslon",
+    name: "/SelectPaslon",
+    component: SelectPaslon,
   },
 ];
 
