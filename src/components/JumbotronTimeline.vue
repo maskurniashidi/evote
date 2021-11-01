@@ -24,12 +24,21 @@
       </div>
     </div>
     <div v-show="mobileJumb" class="jumbotron-timeline-mobile">
-      <img src="https://placeimg.com/1000/600/tech" alt="" />
+      <div class="token-pos">
+        <img src="../assets/img/bg-home.png" alt="" />
+        <div class="card-token">
+          <h2>Pemungutan suara suksesi HIMIT PENS 2021</h2>
+          <div>
+            <Countdown style="color: #fff" deadline="November 22, 2021"></Countdown>
+            <Countdown style="display:none;" end="November 22, 2021s"></Countdown>
+          </div>
+        </div>
+      </div>
       <div class="token-field">
         <h4>Masukkan token untuk vote</h4>
         <div class="token-input-field">
           <input class="token-input" type="text" name="token" id="token" />
-          <router-link class="btn-token" to="#">
+          <router-link class="btn-token" to="/SelectPaslon">
             Kirim
           </router-link>
         </div>
@@ -163,8 +172,26 @@ export default {
 //MOBILE
 .jumbotron-timeline-mobile {
   overflow: hidden;
-  img {
-    width: 100%;
+  .token-pos {
+    position: relative;
+    img {
+      width: 100%;
+      position: relative;
+    }
+    .card-token {
+      position: absolute;
+      top: 0;
+      width: 70%;
+      margin-top: 10px;
+      margin-left: 35px;
+      padding: 20px;
+      h2 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        color: #ffffff;
+      }
+    }
   }
   .token-field {
     background: #81bff9;
@@ -185,6 +212,7 @@ export default {
       height: 50px;
       align-items: center;
       padding: 0px 5px;
+      overflow: hidden;
       .token-input {
         flex: 1;
         height: 50px;

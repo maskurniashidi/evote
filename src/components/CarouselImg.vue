@@ -82,4 +82,24 @@ export default {
     }
   }
 }
+
+@media (max-width: 750px) {
+  .carousel-container {
+    img {
+    }
+    .card-dpt {
+      width: 80%;
+      h3 {
+        margin-bottom: 20px;
+      }
+      p {
+        display: none;
+      }
+      .btn-dpt {
+        &:hover {
+        }
+      }
+    }
+  }
+}
 </style>
