@@ -2,7 +2,7 @@
   <div class="detail-paslon-card">
     <div class="detail-paslon-card-left">
       <div class="left-top">
-        <img src="https://placeimg.com/640/400/tech" alt="" />
+        <img src="../assets/img/paslon1.png" alt="" />
         <h3>Pasangan calon 02</h3>
         <p>Kampanye</p>
         <div class="progress-campaign">

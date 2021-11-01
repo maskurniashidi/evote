@@ -1,7 +1,7 @@
 <template>
   <div class="file-succession-card">
     <div class="img-card">
-      <img src="https://placeimg.com/640/300/tech" alt="" />
+      <img src="../assets/img/berkas-img.png" alt="" />
     </div>
     <div class="card-title">
       <h2>Petunjuk pelaksanaan Suksesi HIMIT PENS 2021</h2>

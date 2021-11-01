@@ -5,7 +5,7 @@
     </div>
     <div class="detail-event-card-bottom">
       <div class="bottom-left-card">
-        <img src="https://placeimg.com/640/400/tech" alt="" />
+        <img src="../assets/img/berkas-img.png" alt="" />
         <div class="card-title">
           <h4>Technical meeting</h4>
           <p>Pasangan calon kahima dan wakahima</p>

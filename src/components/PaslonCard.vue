@@ -3,7 +3,7 @@
     <div class="paslon-cards-top">
       <router-link to="/DetailPaslonPage" class="paslon-card">
         <div class="img-card">
-          <img src="https://placeimg.com/640/300/tech" alt="" />
+          <img src="../assets/img/paslon1.png" alt="" />
         </div>
         <div class="card-title">
           <h2>Pasangan calon 01 HIMIT PENS 2021</h2>
@@ -16,7 +16,7 @@
       </router-link>
       <router-link to="/DetailPaslonPage" class="paslon-card">
         <div class="img-card">
-          <img src="https://placeimg.com/640/301/tech" alt="" />
+          <img src="../assets/img/paslon2.png" alt="" />
         </div>
         <div class="card-title">
           <h2>Pasangan calon 02 HIMIT PENS 2021</h2>

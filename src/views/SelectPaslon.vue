@@ -23,7 +23,7 @@
       <div class="paslon-view-content-bottom">
         <div class="left-paslon">
           <div class="picture-paslon">
-            <img src="https://placeimg.com/640/400/tech" alt="" />
+            <img src="../assets/img/paslon1.png" alt="" />
           </div>
           <div class="visi-misi">
             <h2>Rifki yudha dan george mattew</h2>
@@ -58,7 +58,7 @@
 
         <div class="right-paslon">
           <div class="picture-paslon">
-            <img src="https://placeimg.com/640/400/tech" alt="" />
+            <img src="../assets/img/paslon2.png" alt="" />
           </div>
           <div class="visi-misi">
             <h2>Rifki yudha dan george mattew</h2>
@@ -92,6 +92,7 @@
         </div>
       </div>
     </div>
+    <router-link class="btn-pilih" to="#">Selesai</router-link>
   </div>
 </template>
 
@@ -153,7 +154,6 @@ $light-color: #ffffff;
     width: 100%;
     margin: 0px auto;
     &-top {
-      background: salmon;
       display: flex;
       align-items: center;
       margin-top: 20px;
@@ -164,6 +164,9 @@ $light-color: #ffffff;
     }
 
     .timer-select {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     &-bottom {
@@ -271,7 +274,6 @@ $light-color: #ffffff;
         .visi-misi {
           width: 80%;
           margin-top: 20px;
-          background: #ffffff;
           box-shadow: -2px 4px 10px rgba(47, 128, 236, 0.4);
           border-radius: 8px;
           overflow: hidden;
@@ -345,6 +347,18 @@ $light-color: #ffffff;
         }
       }
     }
+  }
+  .btn-pilih {
+    background: $primary-500;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 40px;
+    width: 30%;
+    margin: 0px auto;
+    display: flex;
+    padding: 10px 0px;
+    justify-content: center;
+    margin-bottom: 50px;
   }
 }
 </style>

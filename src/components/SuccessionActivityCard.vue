@@ -1,6 +1,6 @@
 <template>
   <div class="succession-activity-card">
-    <img src="https://placeimg.com/640/600/tech" alt="" />
+    <img src="../assets/img/bg-card-event.png" alt="" />
     <div class="card-title">
       <h4>Flooring KPU</h4>
       <p>Pengesahan juklak PPU</p>
