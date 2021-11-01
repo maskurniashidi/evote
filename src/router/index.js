@@ -11,6 +11,7 @@ import PaslonPage from "../views/PaslonPage.vue";
 import DetailEventViewPage from "../views/DetailEventViewPage.vue";
 import DetailFileViewPage from "../views/DetailFileViewPage.vue";
 import DetailPaslonPage from "../views/DetailPaslonPage.vue";
+import DetailPaslonPage2 from "../views/DetailPaslonPage2.vue";
 import TimelinePage from "../views/TimelinePage.vue";
 import ProfilePage from "../views/ProfilePage.vue";
 import ViolationReport from "../views/ViolationReport.vue";
@@ -74,6 +75,11 @@ const routes = [
     path: "/DetailPaslonPage",
     name: "DetailPaslonPage",
     component: DetailPaslonPage,
+  },
+  {
+    path: "/DetailPaslonPage2",
+    name: "DetailPaslonPage2",
+    component: DetailPaslonPage2,
   },
   {
     path: "/TimelinePage",

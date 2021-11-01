@@ -2,8 +2,8 @@
   <div class="detail-paslon-card">
     <div class="detail-paslon-card-left">
       <div class="left-top">
-        <img src="../assets/img/paslon1.png" alt="" />
-        <h3>Pasangan calon 01</h3>
+        <img src="../assets/img/paslon2.png" alt="" />
+        <h3>Pasangan calon 02</h3>
         <p>Kampanye</p>
         <div class="progress-campaign">
           <div class="progress-field field-1">
@@ -28,7 +28,7 @@
       </div>
 
       <div class="left-mid">
-        <h2>Dhani dan Arya</h2>
+        <h2>Rifki yudha dan george mattew</h2>
         <div class="tab">
           <input type="checkbox" id="chck2" />
           <label class="tab-label" for="chck2">Visi Paslon</label>
@@ -77,9 +77,9 @@
     <div class="detail-paslon-card-right">
       <div class="right-top">
         <div class="profile">
-          <img src="../assets/img/dhani-profile.png" alt="" />
+          <img src="../assets/img/paslon1-profile.png" alt="" />
           <div class="profile-info">
-            <h3>Dhani</h3>
+            <h3>Rifki yudha asmara rindu</h3>
             <p>3 D4 Teknik Informatika A</p>
           </div>
         </div>
@@ -102,9 +102,9 @@
       </div>
       <div class="right-bottom">
         <div class="profile">
-          <img src="../assets/img/arya.png" alt="" />
+          <img src="../assets/img/paslon2-profile.png" alt="" />
           <div class="profile-info">
-            <h3>Arya</h3>
+            <h3>Rifki yudha asmara rindu</h3>
             <p>3 D4 Teknik Informatika A</p>
           </div>
         </div>
@@ -131,7 +131,7 @@
 
 <script>
 export default {
-  name: "DetailPaslonCard",
+  name: "DetailPaslonCard2",
   components: {},
 };
 </script>

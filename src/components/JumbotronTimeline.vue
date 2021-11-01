@@ -1,7 +1,7 @@
 <template>
   <div class="jumbotron-timeline">
     <div v-show="!mobile" class="jumbotron-timeline-container-desktop">
-      <img src="https://placeimg.com/1000/600/tech" alt="" />
+      <img src="../assets/img/bg-home.png" alt="" />
       <div class="card-token">
         <h2>Pemungutan suara suksesi HIMIT PENS 2021</h2>
         <div>

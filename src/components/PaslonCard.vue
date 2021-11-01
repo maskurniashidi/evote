@@ -14,7 +14,7 @@
           <i class="fas fa-arrow-circle-right fa-1"></i>
         </div>
       </router-link>
-      <router-link to="/DetailPaslonPage" class="paslon-card">
+      <router-link to="/DetailPaslonPage2" class="paslon-card">
         <div class="img-card">
           <img src="../assets/img/paslon2.png" alt="" />
         </div>

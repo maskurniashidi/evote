@@ -70,7 +70,7 @@ export default {
       cursor: pointer;
       display: flex;
       align-items: center;
-      border-bottom: 1px solid #f5f8fa;
+
       &:hover {
       }
       &::after {
@@ -93,8 +93,9 @@ export default {
       padding: 0 1em;
       transition: all 0.35s;
       .boxes-events {
-        margin-top: 15px;
+        border-top: 1px solid #f5f8fa;
         .evote-event {
+          margin-top: 20px;
           margin-bottom: 15px;
           text-decoration: none;
           color: #000;

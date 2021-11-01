@@ -2,7 +2,7 @@
   <div class="container">
     <div class="left">
       <img src="../assets/img/login-bg.png" alt="" />
-      <h2>e<span>Vote</span> Suksesi HIMIT PENS 2022</h2>
+      <h2>e<span>Vote</span> Suksesi HIMIT PENS 2021</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
     <div class="right">

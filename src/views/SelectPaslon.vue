@@ -16,14 +16,14 @@
         <h2>Pemungutan suara Suksesi HIMIT PENS 2021</h2>
       </div>
       <div class="timer-select">
-        <h4>Waktu tersisa</h4>
-        <h5>05:00</h5>
+        <h3>Waktu tersisa</h3>
+        <h4>05:00</h4>
       </div>
 
       <div class="paslon-view-content-bottom">
         <div class="left-paslon">
           <div class="picture-paslon">
-            <img src="../assets/img/paslon1.png" alt="" />
+            <img src="../assets/img/paslon1-select.png" alt="" />
           </div>
           <div class="visi-misi">
             <h2>Rifki yudha dan george mattew</h2>
@@ -58,7 +58,7 @@
 
         <div class="right-paslon">
           <div class="picture-paslon">
-            <img src="../assets/img/paslon2.png" alt="" />
+            <img src="../assets/img/paslon2-select.png" alt="" />
           </div>
           <div class="visi-misi">
             <h2>Rifki yudha dan george mattew</h2>
@@ -92,14 +92,30 @@
         </div>
       </div>
     </div>
-    <router-link class="btn-pilih" to="#">Selesai</router-link>
+    <button type="submit" class="btn-pilih" @click="openModal">Selesai</button>
+    <modal v-show="isModalVisible" @close-modal="closeModal" />
+    <button v-on:click="countDownTimer()">{{ countDown }}</button>
   </div>
 </template>
 
 <script>
+import modal from "../components/Modal.vue";
 export default {
   name: "SelectPaslon",
-  components: {},
+  components: { modal },
+  data() {
+    return {
+      isModalVisible: false,
+    };
+  },
+  methods: {
+    openModal() {
+      this.isModalVisible = true;
+    },
+    closeModal() {
+      this.isModalVisible = false;
+    },
+  },
 };
 </script>
 
@@ -112,6 +128,7 @@ $base-color: #2f80ec;
 $secondary-color: #0d397a;
 $light-color: #ffffff;
 .select-paslon-view {
+  background: #f5f8fa;
   header {
     background-color: $base-color;
     font-family: $base-font;
@@ -165,8 +182,25 @@ $light-color: #ffffff;
 
     .timer-select {
       display: flex;
+      width: 150px;
+      position: relative;
+      left: 70%;
       flex-direction: column;
       align-items: center;
+      margin: 20px 0px;
+      background: #eaeaea;
+      border-radius: 8px;
+      overflow: hidden;
+      h3 {
+        background: #ffd693;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0px;
+        color: white;
+      }
+      h4 {
+        padding: 5px 0px;
+      }
     }
 
     &-bottom {
@@ -274,6 +308,9 @@ $light-color: #ffffff;
         .visi-misi {
           width: 80%;
           margin-top: 20px;
+          background: #ffffff;
+          /* Shadow */
+
           box-shadow: -2px 4px 10px rgba(47, 128, 236, 0.4);
           border-radius: 8px;
           overflow: hidden;
@@ -359,6 +396,11 @@ $light-color: #ffffff;
     padding: 10px 0px;
     justify-content: center;
     margin-bottom: 50px;
+    font-family: $base-font;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    border: none;
   }
 }
 </style>
