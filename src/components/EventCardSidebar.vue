@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="tab">
-      <input type="checkbox" id="chck1" />
+      <input class="sidebar-input" type="checkbox" id="chck1" />
       <label class="tab-label" for="chck1">Kegiatan Terkait</label>
       <div class="tab-content">
         <div class="boxes-events">
@@ -56,7 +56,7 @@ export default {
     width: 100%;
     color: #000;
     overflow: hidden;
-    input {
+    .sidebar-input {
       position: absolute;
       opacity: 0;
       z-index: -1;
@@ -65,7 +65,7 @@ export default {
     &-label {
       display: flex;
       justify-content: space-between;
-      padding: 1em;
+      padding: 5px 1em;
       font-weight: 300;
       cursor: pointer;
       display: flex;
@@ -101,6 +101,7 @@ export default {
           color: #000;
           display: flex;
           align-items: center;
+          margin-top: 20px;
           &:hover {
             .fas,
             .far {
@@ -136,7 +137,7 @@ export default {
     }
   }
 
-  input:checked {
+  .sidebar-input:checked {
     + .tab-label {
       &::after {
         transform: rotate(90deg);

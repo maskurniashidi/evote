@@ -1,7 +1,7 @@
 <template>
   <div class="paslon-cards">
     <div class="paslon-cards-top">
-      <router-link to="/DetailPaslonPage" class="paslon-card">
+      <router-link to="/DetailPaslon" class="paslon-card">
         <div class="img-card">
           <img src="../assets/img/paslon1.png" alt="" />
         </div>
@@ -13,7 +13,6 @@
           <p>Lihat selengkapnya</p>
           <i class="fas fa-arrow-circle-right fa-1"></i>
         </div>
-      </router-link>
       <router-link to="/DetailPaslonPage2" class="paslon-card">
         <div class="img-card">
           <img src="../assets/img/paslon2.png" alt="" />
@@ -70,6 +69,9 @@ export default {
 <style lang="scss" scoped>
 //IMPORT
 @import "./modules/variables";
+
+//GLOBAL
+
 .paslon-cards {
   width: 100%;
   &-top {
