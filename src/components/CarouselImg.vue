@@ -1,6 +1,6 @@
 <template>
   <div class="carousel-container">
-    <img src="https://placeimg.com/1000/600/tech" alt="" />
+    <img src="../assets/img/bg-home.png" alt="" />
     <div class="card-dpt">
       <h3>Suarakan suaramu dalam Suksesi HIMIT PENS 2021</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales sit amet orci ac pulvinar. Ut imperdiet augue quis convallis finibus.</p>
@@ -69,6 +69,26 @@ export default {
     img {
     }
     .card-dpt {
+      h3 {
+        margin-bottom: 20px;
+      }
+      p {
+        display: none;
+      }
+      .btn-dpt {
+        &:hover {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .carousel-container {
+    img {
+    }
+    .card-dpt {
+      width: 80%;
       h3 {
         margin-bottom: 20px;
       }

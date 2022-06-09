@@ -10,7 +10,13 @@ import FileViewPage from "../views/FileViewPage.vue";
 import PaslonPage from "../views/PaslonPage.vue";
 import DetailEventViewPage from "../views/DetailEventViewPage.vue";
 import DetailFileViewPage from "../views/DetailFileViewPage.vue";
-import DetailPaslon from "../views/DetailPaslon.vue";
+import DetailPaslonPage from "../views/DetailPaslonPage.vue";
+import DetailPaslonPage2 from "../views/DetailPaslonPage2.vue";
+import TimelinePage from "../views/TimelinePage.vue";
+import ProfilePage from "../views/ProfilePage.vue";
+import ViolationReport from "../views/ViolationReport.vue";
+import RegisDPTPage from "../views/RegisDPTPage.vue";
+import SelectPaslon from "../views//SelectPaslon.vue";
 
 Vue.use(VueRouter);
 
@@ -66,9 +72,39 @@ const routes = [
     component: DetailFileViewPage,
   },
   {
-    path: "/DetailPaslon",
-    name: "DetailPaslon",
-    component: DetailPaslon,
+    path: "/DetailPaslonPage",
+    name: "DetailPaslonPage",
+    component: DetailPaslonPage,
+  },
+  {
+    path: "/DetailPaslonPage2",
+    name: "DetailPaslonPage2",
+    component: DetailPaslonPage2,
+  },
+  {
+    path: "/TimelinePage",
+    name: "TimelinePage",
+    component: TimelinePage,
+  },
+  {
+    path: "/ProfilePage",
+    name: "ProfilePage",
+    component: ProfilePage,
+  },
+  {
+    path: "/ViolationReport",
+    name: "ViolationReport",
+    component: ViolationReport,
+  },
+  {
+    path: "/RegisDPTPage",
+    name: "RegisDPTPage",
+    component: RegisDPTPage,
+  },
+  {
+    path: "/SelectPaslon",
+    name: "/SelectPaslon",
+    component: SelectPaslon,
   },
 ];
 

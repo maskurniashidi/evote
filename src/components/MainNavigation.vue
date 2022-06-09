@@ -11,7 +11,7 @@
         <ul v-show="!mobile">
           <router-link class="link" to="/HomePage"><i class="fas fa-home" style="color:white"></i></router-link>
           <router-link class="link" to="/PaslonPage"><i class="fas fa-book-open" style="color:white"></i></router-link>
-          <router-link class="link" to="#"><i class="fas fa-stream" style="color:white"></i></router-link>
+          <router-link class="link" to="/TimelinePage"><i class="fas fa-stream" style="color:white"></i></router-link>
         </ul>
       </div>
       <menuIcon @click="toggleMobileNav" class="menu-icon" v-show="mobile" />
@@ -27,12 +27,17 @@
 
     <transition name="mobile-nav">
       <div class="mobile-nav" v-show="mobileNav">
-        <i @click="toggleMobileNav" v-show="mobile" class="fas fa-bars fa-2x"></i>
+        <div class="nav-main-mobile">
+          <i @click="toggleMobileNav" v-show="mobile" class="fas fa-bars fa-2x"></i>
+          <router-link class="link" to="/HomePage"><i class="fas fa-home fa-2x" style="color:#2F80EC"></i></router-link>
+          <router-link class="link" to="/PaslonPage"><i class="fas fa-book-open fa-2x" style="color:#2F80EC"></i></router-link>
+          <router-link class="link" to="/TimelinePage"><i class="fas fa-stream fa-2x" style="color:#2F80EC"></i></router-link>
+        </div>
         <div class="profile">
           <img src="https://placeimg.com/50/50/people" alt="" />
           <div class="info">
             <h4>Maskurnia Shidi</h4>
-            <router-link class="btn-view" to="#">lihat profil</router-link>
+            <router-link class="btn-view" to="/ProfilePage">lihat profil</router-link>
           </div>
         </div>
         <hr class="line" />
@@ -48,15 +53,15 @@
         <div class="evote-events">
           <h4>Kegiatan Terkait</h4>
           <div class="boxes-events">
-            <router-link class="evote-event" to="#">
+            <router-link class="evote-event" to="/RegisDPTPage">
               <h4>Pendaftaran DPT</h4>
               <p>Daftarkan akun anda agar terdaftar sebagai DPT Suksesi HIMIT</p>
             </router-link>
-            <router-link class="evote-event" to="#">
+            <router-link class="evote-event" to="/ViolationReport">
               <h4>Pelaporan kecurangan</h4>
               <p>Laporkan segala masalah yang terjadi dalam Suksesi HIMIT</p>
             </router-link>
-            <router-link class="evote-event" to="#">
+            <router-link class="evote-event" to="/ErrorPage">
               <h4>Kritik dan saran</h4>
               <p>Berikan kritik dan saran terkait suksesi HIMIT</p>
             </router-link>
@@ -235,6 +240,15 @@ header {
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.13);
   -ms-overflow-style: none;
   scrollbar-width: none;
+
+  .nav-main-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    .fas {
+    }
+  }
 
   //global
   h4 {
